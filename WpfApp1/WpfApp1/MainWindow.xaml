@@ -1,0 +1,26 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="first" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF36ABBC" Offset="0"/>
+                <GradientStop Color="#FFFF9F9F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="label" Content="โปรแกรมคำนวณค่าจ้าง" HorizontalAlignment="Center" Margin="171,33,223.6,0" VerticalAlignment="Top" Height="78" Width="399" FontSize="44" Foreground="Red" Background="#FFFDE989"/>
+        <Label x:Name="label_Copy" Content="ชม.ทำงาน" HorizontalAlignment="Center" Margin="55,142,610.6,0" VerticalAlignment="Top" Height="53" Width="128" FontSize="30" Foreground="#FF3D00FF" Background="#FFFDE989"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="30" Margin="239,153,0,0" TextWrapping="Wrap" Text="กี่ชั่วโมง" VerticalAlignment="Top" Width="218" FontSize="19"/>
+        <Label x:Name="label_Copy1" Content="อัตราค่าจ่าย&#xD;&#xA;ต่อชั่วโมง" HorizontalAlignment="Center" Margin="55,206,610.6,0" VerticalAlignment="Top" Height="73" Width="128" FontSize="23" Foreground="#FF3D00FF" Background="#FFFDE989"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="30" Margin="239,226,0,0" TextWrapping="Wrap" Text="กี่ชั่วโมง" VerticalAlignment="Top" Width="218" FontSize="19"/>
+        <Label x:Name="label_Copy2" Content="เป็นเงิน&#xD;&#xA;" HorizontalAlignment="Center" Margin="55,300,610.6,0" VerticalAlignment="Top" Height="53" Width="128" FontSize="30" Foreground="#FF3D00FF" Background="#FFFDE989"/>
+        <Button x:Name="button" Content="บันทึก" HorizontalAlignment="Left" Margin="570,169,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1" Content="ปิด" HorizontalAlignment="Left" Margin="570,269,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label1" Content="ได้เท่าไร" HorizontalAlignment="Left" Margin="239,300,0,0" VerticalAlignment="Top" Width="218" Height="53" Grid.IsSharedSizeScope="True" FontSize="26"/>
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="โปรแกรมคำนวณ" HorizontalAlignment="Left" Height="45" Margin="266,40,0,0" VerticalAlignment="Top" Width="298"/>
+        <Label x:Name="label1" Content="ราคากระทงที่ขาย" HorizontalAlignment="Left" Margin="57,111,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="จำนวนที่ขายได้" HorizontalAlignment="Left" Margin="57,142,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy1" Content="เป็นเงิน" HorizontalAlignment="Left" Margin="57,173,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy2" Content="นัดผู้สาว/ผู้บ่าว (คน)" HorizontalAlignment="Left" Margin="57,204,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy3" Content="ค่าจ้างนัดลอยกระทงต่อคน" HorizontalAlignment="Left" Margin="57,235,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy4" Content="ค่าจ้างรวม" HorizontalAlignment="Left" Margin="57,266,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy5" Content="เหลือเงิน" HorizontalAlignment="Left" Margin="57,296,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_sp" HorizontalAlignment="Left" Height="23" Margin="216,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_sc" HorizontalAlignment="Left" Height="23" Margin="216,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_p" HorizontalAlignment="Left" Height="23" Margin="216,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="txt_ex" HorizontalAlignment="Left" Height="23" Margin="216,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="txt_ss" HorizontalAlignment="Left" Height="23" Margin="216,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="txt_s" HorizontalAlignment="Left" Height="23" Margin="216,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_mwc" HorizontalAlignment="Left" Height="23" Margin="216,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="คำนวณ" HorizontalAlignment="Left" Margin="420,137,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1" Content="จบโปรแกรม" HorizontalAlignment="Left" Margin="420,197,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
