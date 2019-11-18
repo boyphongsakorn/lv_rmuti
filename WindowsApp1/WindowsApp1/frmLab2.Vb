@@ -1,4 +1,5 @@
 ﻿Public Class frmLab2
+
     Private Sub RadSalaryYear_CheckedChanged(sender As Object, e As EventArgs) Handles radSalaryYear.CheckedChanged
         lblOutput.Text = txtSalary.Text * 12
     End Sub
@@ -56,19 +57,9 @@
     End Sub
 
     Private Sub BntRestart_Click(sender As Object, e As EventArgs) Handles bntRestart.Click
-        Label1.Visible = True
-        Label2.Visible = True
-        Label3.Visible = True
-        GroupBox3.Visible = True
-        lblOutput.Visible = True
-        txtSalary.Visible = True
-        txtSale.Visible = True
-        Label1.Enabled = True
-        Label2.Enabled = True
-        Label3.Enabled = True
-        GroupBox3.Enabled = True
-        lblOutput.Enabled = True
-        txtSalary.Enabled = True
-        txtSale.Enabled = True
+        radHide.Checked = False
+        radProtect.Checked = False
+        radShow.Checked = True
+        radUse.Checked = True
     End Sub
 End Class
