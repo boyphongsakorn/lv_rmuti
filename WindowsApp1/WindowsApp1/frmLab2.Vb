@@ -61,5 +61,9 @@
         radProtect.Checked = False
         radShow.Checked = True
         radUse.Checked = True
+        radBonus.Checked = False
+        radIncome.Checked = False
+        radSalaryYear.Checked = False
+        radTax.Checked = False
     End Sub
 End Class
