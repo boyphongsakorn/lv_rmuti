@@ -23,19 +23,19 @@ Partial Class frmLab2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.radHide = New System.Windows.Forms.RadioButton()
+        Me.radShow = New System.Windows.Forms.RadioButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.radProtect = New System.Windows.Forms.RadioButton()
+        Me.radUse = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.radTax = New System.Windows.Forms.RadioButton()
+        Me.radIncome = New System.Windows.Forms.RadioButton()
+        Me.radBonus = New System.Windows.Forms.RadioButton()
+        Me.radSalaryYear = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSalary = New System.Windows.Forms.TextBox()
         Me.txtSale = New System.Windows.Forms.TextBox()
-        Me.radShow = New System.Windows.Forms.RadioButton()
-        Me.radHide = New System.Windows.Forms.RadioButton()
-        Me.radUse = New System.Windows.Forms.RadioButton()
-        Me.radProtect = New System.Windows.Forms.RadioButton()
-        Me.radSalaryYear = New System.Windows.Forms.RadioButton()
-        Me.radBonus = New System.Windows.Forms.RadioButton()
-        Me.radIncome = New System.Windows.Forms.RadioButton()
-        Me.radTax = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.bntRestart = New System.Windows.Forms.Button()
@@ -56,6 +56,28 @@ Partial Class frmLab2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "การแสดงผล"
         '
+        'radHide
+        '
+        Me.radHide.AutoSize = True
+        Me.radHide.Location = New System.Drawing.Point(20, 57)
+        Me.radHide.Name = "radHide"
+        Me.radHide.Size = New System.Drawing.Size(53, 21)
+        Me.radHide.TabIndex = 1
+        Me.radHide.TabStop = True
+        Me.radHide.Text = "ซ่อน"
+        Me.radHide.UseVisualStyleBackColor = True
+        '
+        'radShow
+        '
+        Me.radShow.AutoSize = True
+        Me.radShow.Location = New System.Drawing.Point(20, 22)
+        Me.radShow.Name = "radShow"
+        Me.radShow.Size = New System.Drawing.Size(87, 21)
+        Me.radShow.TabIndex = 0
+        Me.radShow.TabStop = True
+        Me.radShow.Text = "มองเห็นได้"
+        Me.radShow.UseVisualStyleBackColor = True
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.radProtect)
@@ -66,6 +88,28 @@ Partial Class frmLab2
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "การใช้งาน"
+        '
+        'radProtect
+        '
+        Me.radProtect.AutoSize = True
+        Me.radProtect.Location = New System.Drawing.Point(20, 60)
+        Me.radProtect.Name = "radProtect"
+        Me.radProtect.Size = New System.Drawing.Size(67, 21)
+        Me.radProtect.TabIndex = 1
+        Me.radProtect.TabStop = True
+        Me.radProtect.Text = "ป้องกัน"
+        Me.radProtect.UseVisualStyleBackColor = True
+        '
+        'radUse
+        '
+        Me.radUse.AutoSize = True
+        Me.radUse.Location = New System.Drawing.Point(20, 22)
+        Me.radUse.Name = "radUse"
+        Me.radUse.Size = New System.Drawing.Size(79, 21)
+        Me.radUse.TabIndex = 0
+        Me.radUse.TabStop = True
+        Me.radUse.Text = "ใข้งานได้"
+        Me.radUse.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -79,6 +123,50 @@ Partial Class frmLab2
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "การคำนวณ"
+        '
+        'radTax
+        '
+        Me.radTax.AutoSize = True
+        Me.radTax.Location = New System.Drawing.Point(151, 60)
+        Me.radTax.Name = "radTax"
+        Me.radTax.Size = New System.Drawing.Size(52, 21)
+        Me.radTax.TabIndex = 3
+        Me.radTax.TabStop = True
+        Me.radTax.Text = "ภาษี"
+        Me.radTax.UseVisualStyleBackColor = True
+        '
+        'radIncome
+        '
+        Me.radIncome.AutoSize = True
+        Me.radIncome.Location = New System.Drawing.Point(12, 60)
+        Me.radIncome.Name = "radIncome"
+        Me.radIncome.Size = New System.Drawing.Size(86, 21)
+        Me.radIncome.TabIndex = 2
+        Me.radIncome.TabStop = True
+        Me.radIncome.Text = "รายได้รวม"
+        Me.radIncome.UseVisualStyleBackColor = True
+        '
+        'radBonus
+        '
+        Me.radBonus.AutoSize = True
+        Me.radBonus.Location = New System.Drawing.Point(151, 22)
+        Me.radBonus.Name = "radBonus"
+        Me.radBonus.Size = New System.Drawing.Size(59, 21)
+        Me.radBonus.TabIndex = 1
+        Me.radBonus.TabStop = True
+        Me.radBonus.Text = "โบนัส"
+        Me.radBonus.UseVisualStyleBackColor = True
+        '
+        'radSalaryYear
+        '
+        Me.radSalaryYear.AutoSize = True
+        Me.radSalaryYear.Location = New System.Drawing.Point(12, 22)
+        Me.radSalaryYear.Name = "radSalaryYear"
+        Me.radSalaryYear.Size = New System.Drawing.Size(115, 21)
+        Me.radSalaryYear.TabIndex = 0
+        Me.radSalaryYear.TabStop = True
+        Me.radSalaryYear.Text = "เงินเดือนทั้งหมด"
+        Me.radSalaryYear.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -102,94 +190,6 @@ Partial Class frmLab2
         Me.txtSale.Name = "txtSale"
         Me.txtSale.Size = New System.Drawing.Size(100, 22)
         Me.txtSale.TabIndex = 5
-        '
-        'radShow
-        '
-        Me.radShow.AutoSize = True
-        Me.radShow.Location = New System.Drawing.Point(20, 22)
-        Me.radShow.Name = "radShow"
-        Me.radShow.Size = New System.Drawing.Size(87, 21)
-        Me.radShow.TabIndex = 0
-        Me.radShow.TabStop = True
-        Me.radShow.Text = "มองเห็นได้"
-        Me.radShow.UseVisualStyleBackColor = True
-        '
-        'radHide
-        '
-        Me.radHide.AutoSize = True
-        Me.radHide.Location = New System.Drawing.Point(20, 57)
-        Me.radHide.Name = "radHide"
-        Me.radHide.Size = New System.Drawing.Size(53, 21)
-        Me.radHide.TabIndex = 1
-        Me.radHide.TabStop = True
-        Me.radHide.Text = "ซ่อน"
-        Me.radHide.UseVisualStyleBackColor = True
-        '
-        'radUse
-        '
-        Me.radUse.AutoSize = True
-        Me.radUse.Location = New System.Drawing.Point(20, 22)
-        Me.radUse.Name = "radUse"
-        Me.radUse.Size = New System.Drawing.Size(79, 21)
-        Me.radUse.TabIndex = 0
-        Me.radUse.TabStop = True
-        Me.radUse.Text = "ใข้งานได้"
-        Me.radUse.UseVisualStyleBackColor = True
-        '
-        'radProtect
-        '
-        Me.radProtect.AutoSize = True
-        Me.radProtect.Location = New System.Drawing.Point(20, 60)
-        Me.radProtect.Name = "radProtect"
-        Me.radProtect.Size = New System.Drawing.Size(67, 21)
-        Me.radProtect.TabIndex = 1
-        Me.radProtect.TabStop = True
-        Me.radProtect.Text = "ป้องกัน"
-        Me.radProtect.UseVisualStyleBackColor = True
-        '
-        'radSalaryYear
-        '
-        Me.radSalaryYear.AutoSize = True
-        Me.radSalaryYear.Location = New System.Drawing.Point(12, 22)
-        Me.radSalaryYear.Name = "radSalaryYear"
-        Me.radSalaryYear.Size = New System.Drawing.Size(115, 21)
-        Me.radSalaryYear.TabIndex = 0
-        Me.radSalaryYear.TabStop = True
-        Me.radSalaryYear.Text = "เงินเดือนทั้งหมด"
-        Me.radSalaryYear.UseVisualStyleBackColor = True
-        '
-        'radBonus
-        '
-        Me.radBonus.AutoSize = True
-        Me.radBonus.Location = New System.Drawing.Point(151, 22)
-        Me.radBonus.Name = "radBonus"
-        Me.radBonus.Size = New System.Drawing.Size(59, 21)
-        Me.radBonus.TabIndex = 1
-        Me.radBonus.TabStop = True
-        Me.radBonus.Text = "โบนัส"
-        Me.radBonus.UseVisualStyleBackColor = True
-        '
-        'radIncome
-        '
-        Me.radIncome.AutoSize = True
-        Me.radIncome.Location = New System.Drawing.Point(12, 60)
-        Me.radIncome.Name = "radIncome"
-        Me.radIncome.Size = New System.Drawing.Size(86, 21)
-        Me.radIncome.TabIndex = 2
-        Me.radIncome.TabStop = True
-        Me.radIncome.Text = "รายได้รวม"
-        Me.radIncome.UseVisualStyleBackColor = True
-        '
-        'radTax
-        '
-        Me.radTax.AutoSize = True
-        Me.radTax.Location = New System.Drawing.Point(151, 60)
-        Me.radTax.Name = "radTax"
-        Me.radTax.Size = New System.Drawing.Size(52, 21)
-        Me.radTax.TabIndex = 3
-        Me.radTax.TabStop = True
-        Me.radTax.Text = "ภาษี"
-        Me.radTax.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -245,7 +245,7 @@ Partial Class frmLab2
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frmLab2"
-        Me.Text = "frmLab2"
+        Me.Text = "dw"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

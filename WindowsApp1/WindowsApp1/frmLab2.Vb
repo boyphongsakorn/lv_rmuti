@@ -65,5 +65,7 @@
         radIncome.Checked = False
         radSalaryYear.Checked = False
         radTax.Checked = False
+        txtSalary.Clear()
+        txtSale.Clear()
     End Sub
 End Class
