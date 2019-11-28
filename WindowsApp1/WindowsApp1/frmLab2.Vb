@@ -67,5 +67,6 @@
         radTax.Checked = False
         txtSalary.Clear()
         txtSale.Clear()
+        lblOutput.Text = ""
     End Sub
 End Class

@@ -222,12 +222,12 @@ Partial Class frmLab2
         '
         Me.lblOutput.AutoSize = True
         Me.lblOutput.BackColor = System.Drawing.Color.Red
-        Me.lblOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblOutput.Location = New System.Drawing.Point(532, 308)
+        Me.lblOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.lblOutput.Location = New System.Drawing.Point(524, 295)
+        Me.lblOutput.MinimumSize = New System.Drawing.Size(150, 50)
         Me.lblOutput.Name = "lblOutput"
-        Me.lblOutput.Size = New System.Drawing.Size(53, 19)
+        Me.lblOutput.Size = New System.Drawing.Size(150, 50)
         Me.lblOutput.TabIndex = 9
-        Me.lblOutput.Text = "Label4"
         '
         'frmLab2
         '
