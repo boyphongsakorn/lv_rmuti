@@ -21,4 +21,9 @@
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
         MessageBox.Show("WOW")
     End Sub
+
+    Private Sub Lab4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Lab4ToolStripMenuItem.Click
+        Dim Lab4 As frmLab4 = New frmLab4
+        Lab4.Show()
+    End Sub
 End Class
