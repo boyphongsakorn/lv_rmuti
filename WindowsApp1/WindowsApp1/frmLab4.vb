@@ -1,7 +1,7 @@
 ﻿Public Class frmLab4
     Const decR_BONUS As Double = 0.2
-    Const decR_ALLOW As Double = 0.1
-    Const decR_TAX As Double = 0.7
+    Const decR_ALLOW As Double = 0.01
+    Const decR_TAX As Double = 0.07
     Dim datNowDate As Date = Date.Now
     Dim dblTax, dblBonus, dblYearSalary, dblAllowance, dblAllIncome As Single
 
