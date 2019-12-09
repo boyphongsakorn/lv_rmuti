@@ -260,7 +260,7 @@ Partial Class frmLab5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(328, 450)
+        Me.ClientSize = New System.Drawing.Size(328, 384)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblCredit)
         Me.Controls.Add(Me.lblGrant)

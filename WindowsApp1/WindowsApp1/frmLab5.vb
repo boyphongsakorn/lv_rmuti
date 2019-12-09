@@ -40,6 +40,7 @@
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
         If (txtProduct.Text = "" Or txtProPrice.Text = "" Or txtProAmount.Text = "") Then
             MessageBox.Show("ป้อนข้อมูลไม่สมบูรณ์")
+            Exit Sub
         End If
 
         If (radCustomer.Checked = True And radCash.Checked = True) Then 'ถ้า เป็นลูกค้า ภายใน และ จ่ายเงินสด'
@@ -59,9 +60,9 @@
             decGrant = decSumSale
         End If
 
-        If (radCash.Checked = True) Then
+        If (radCash.Checked = True) Then 'ถ้าเลือกเป็น เงินสด'
             decCredit = 0
-        Else
+        Else 'ถ้าไม่ได้เลือกเป็น เงินสด'
             decCredit = decSumSale
         End If
 
