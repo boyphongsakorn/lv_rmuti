@@ -53,6 +53,8 @@ Partial Class frmPractice3
         Me.Practice1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Practice2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Practice3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Practice4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Practice5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LabToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Lab1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Lab2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -69,8 +71,6 @@ Partial Class frmPractice3
         Me.Lab13ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Lab14ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Lab15ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Practice4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Practice5ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -283,103 +283,6 @@ Partial Class frmPractice3
         Me.Practice3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.Practice3ToolStripMenuItem.Text = "Practice 3 (This)"
         '
-        'LabToolStripMenuItem
-        '
-        Me.LabToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Lab1ToolStripMenuItem, Me.Lab2ToolStripMenuItem, Me.Lab3ToolStripMenuItem, Me.Lab4ToolStripMenuItem, Me.Lab5ToolStripMenuItem, Me.Lab6ToolStripMenuItem, Me.Lab7ToolStripMenuItem, Me.Lab8ToolStripMenuItem, Me.Lab9ToolStripMenuItem, Me.Lab10ToolStripMenuItem, Me.Lab11ToolStripMenuItem, Me.Lab12ToolStripMenuItem, Me.Lab13ToolStripMenuItem, Me.Lab14ToolStripMenuItem, Me.Lab15ToolStripMenuItem})
-        Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
-        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
-        Me.LabToolStripMenuItem.Text = "Lab"
-        '
-        'Lab1ToolStripMenuItem
-        '
-        Me.Lab1ToolStripMenuItem.Name = "Lab1ToolStripMenuItem"
-        Me.Lab1ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab1ToolStripMenuItem.Text = "Lab1"
-        '
-        'Lab2ToolStripMenuItem
-        '
-        Me.Lab2ToolStripMenuItem.Name = "Lab2ToolStripMenuItem"
-        Me.Lab2ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab2ToolStripMenuItem.Text = "Lab2"
-        '
-        'Lab3ToolStripMenuItem
-        '
-        Me.Lab3ToolStripMenuItem.Name = "Lab3ToolStripMenuItem"
-        Me.Lab3ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab3ToolStripMenuItem.Text = "Lab3"
-        '
-        'Lab4ToolStripMenuItem
-        '
-        Me.Lab4ToolStripMenuItem.Name = "Lab4ToolStripMenuItem"
-        Me.Lab4ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab4ToolStripMenuItem.Text = "Lab4"
-        '
-        'Lab5ToolStripMenuItem
-        '
-        Me.Lab5ToolStripMenuItem.Name = "Lab5ToolStripMenuItem"
-        Me.Lab5ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab5ToolStripMenuItem.Text = "Lab5"
-        '
-        'Lab6ToolStripMenuItem
-        '
-        Me.Lab6ToolStripMenuItem.Name = "Lab6ToolStripMenuItem"
-        Me.Lab6ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab6ToolStripMenuItem.Text = "Lab6"
-        '
-        'Lab7ToolStripMenuItem
-        '
-        Me.Lab7ToolStripMenuItem.Name = "Lab7ToolStripMenuItem"
-        Me.Lab7ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab7ToolStripMenuItem.Text = "Lab7"
-        '
-        'Lab8ToolStripMenuItem
-        '
-        Me.Lab8ToolStripMenuItem.Name = "Lab8ToolStripMenuItem"
-        Me.Lab8ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab8ToolStripMenuItem.Text = "Lab8"
-        '
-        'Lab9ToolStripMenuItem
-        '
-        Me.Lab9ToolStripMenuItem.Name = "Lab9ToolStripMenuItem"
-        Me.Lab9ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab9ToolStripMenuItem.Text = "Lab9"
-        '
-        'Lab10ToolStripMenuItem
-        '
-        Me.Lab10ToolStripMenuItem.Name = "Lab10ToolStripMenuItem"
-        Me.Lab10ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab10ToolStripMenuItem.Text = "Lab10"
-        '
-        'Lab11ToolStripMenuItem
-        '
-        Me.Lab11ToolStripMenuItem.Name = "Lab11ToolStripMenuItem"
-        Me.Lab11ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab11ToolStripMenuItem.Text = "Lab11"
-        '
-        'Lab12ToolStripMenuItem
-        '
-        Me.Lab12ToolStripMenuItem.Name = "Lab12ToolStripMenuItem"
-        Me.Lab12ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab12ToolStripMenuItem.Text = "Lab12"
-        '
-        'Lab13ToolStripMenuItem
-        '
-        Me.Lab13ToolStripMenuItem.Name = "Lab13ToolStripMenuItem"
-        Me.Lab13ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab13ToolStripMenuItem.Text = "Lab13"
-        '
-        'Lab14ToolStripMenuItem
-        '
-        Me.Lab14ToolStripMenuItem.Name = "Lab14ToolStripMenuItem"
-        Me.Lab14ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab14ToolStripMenuItem.Text = "Lab14"
-        '
-        'Lab15ToolStripMenuItem
-        '
-        Me.Lab15ToolStripMenuItem.Name = "Lab15ToolStripMenuItem"
-        Me.Lab15ToolStripMenuItem.Size = New System.Drawing.Size(132, 26)
-        Me.Lab15ToolStripMenuItem.Text = "Lab15"
-        '
         'Practice4ToolStripMenuItem
         '
         Me.Practice4ToolStripMenuItem.Name = "Practice4ToolStripMenuItem"
@@ -392,10 +295,108 @@ Partial Class frmPractice3
         Me.Practice5ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.Practice5ToolStripMenuItem.Text = "Practice 5"
         '
+        'LabToolStripMenuItem
+        '
+        Me.LabToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Lab1ToolStripMenuItem, Me.Lab2ToolStripMenuItem, Me.Lab3ToolStripMenuItem, Me.Lab4ToolStripMenuItem, Me.Lab5ToolStripMenuItem, Me.Lab6ToolStripMenuItem, Me.Lab7ToolStripMenuItem, Me.Lab8ToolStripMenuItem, Me.Lab9ToolStripMenuItem, Me.Lab10ToolStripMenuItem, Me.Lab11ToolStripMenuItem, Me.Lab12ToolStripMenuItem, Me.Lab13ToolStripMenuItem, Me.Lab14ToolStripMenuItem, Me.Lab15ToolStripMenuItem})
+        Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
+        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
+        Me.LabToolStripMenuItem.Text = "Lab"
+        '
+        'Lab1ToolStripMenuItem
+        '
+        Me.Lab1ToolStripMenuItem.Name = "Lab1ToolStripMenuItem"
+        Me.Lab1ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab1ToolStripMenuItem.Text = "Lab1"
+        '
+        'Lab2ToolStripMenuItem
+        '
+        Me.Lab2ToolStripMenuItem.Name = "Lab2ToolStripMenuItem"
+        Me.Lab2ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab2ToolStripMenuItem.Text = "Lab2"
+        '
+        'Lab3ToolStripMenuItem
+        '
+        Me.Lab3ToolStripMenuItem.Name = "Lab3ToolStripMenuItem"
+        Me.Lab3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab3ToolStripMenuItem.Text = "Lab3"
+        '
+        'Lab4ToolStripMenuItem
+        '
+        Me.Lab4ToolStripMenuItem.Name = "Lab4ToolStripMenuItem"
+        Me.Lab4ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab4ToolStripMenuItem.Text = "Lab4"
+        '
+        'Lab5ToolStripMenuItem
+        '
+        Me.Lab5ToolStripMenuItem.Name = "Lab5ToolStripMenuItem"
+        Me.Lab5ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab5ToolStripMenuItem.Text = "Lab5"
+        '
+        'Lab6ToolStripMenuItem
+        '
+        Me.Lab6ToolStripMenuItem.Name = "Lab6ToolStripMenuItem"
+        Me.Lab6ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab6ToolStripMenuItem.Text = "Lab6"
+        '
+        'Lab7ToolStripMenuItem
+        '
+        Me.Lab7ToolStripMenuItem.Name = "Lab7ToolStripMenuItem"
+        Me.Lab7ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab7ToolStripMenuItem.Text = "Lab7"
+        '
+        'Lab8ToolStripMenuItem
+        '
+        Me.Lab8ToolStripMenuItem.Name = "Lab8ToolStripMenuItem"
+        Me.Lab8ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab8ToolStripMenuItem.Text = "Lab8"
+        '
+        'Lab9ToolStripMenuItem
+        '
+        Me.Lab9ToolStripMenuItem.Name = "Lab9ToolStripMenuItem"
+        Me.Lab9ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab9ToolStripMenuItem.Text = "Lab9"
+        '
+        'Lab10ToolStripMenuItem
+        '
+        Me.Lab10ToolStripMenuItem.Name = "Lab10ToolStripMenuItem"
+        Me.Lab10ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab10ToolStripMenuItem.Text = "Lab10"
+        '
+        'Lab11ToolStripMenuItem
+        '
+        Me.Lab11ToolStripMenuItem.Name = "Lab11ToolStripMenuItem"
+        Me.Lab11ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab11ToolStripMenuItem.Text = "Lab11"
+        '
+        'Lab12ToolStripMenuItem
+        '
+        Me.Lab12ToolStripMenuItem.Name = "Lab12ToolStripMenuItem"
+        Me.Lab12ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab12ToolStripMenuItem.Text = "Lab12"
+        '
+        'Lab13ToolStripMenuItem
+        '
+        Me.Lab13ToolStripMenuItem.Name = "Lab13ToolStripMenuItem"
+        Me.Lab13ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab13ToolStripMenuItem.Text = "Lab13"
+        '
+        'Lab14ToolStripMenuItem
+        '
+        Me.Lab14ToolStripMenuItem.Name = "Lab14ToolStripMenuItem"
+        Me.Lab14ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab14ToolStripMenuItem.Text = "Lab14"
+        '
+        'Lab15ToolStripMenuItem
+        '
+        Me.Lab15ToolStripMenuItem.Name = "Lab15ToolStripMenuItem"
+        Me.Lab15ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab15ToolStripMenuItem.Text = "Lab15"
+        '
         'frmPractice3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
