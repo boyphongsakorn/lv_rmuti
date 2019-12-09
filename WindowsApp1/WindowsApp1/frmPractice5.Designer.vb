@@ -38,58 +38,63 @@ Partial Class frmPractice5
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label1.Location = New System.Drawing.Point(13, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 17)
+        Me.Label1.Size = New System.Drawing.Size(88, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ราคาสินค้า"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label2.Location = New System.Drawing.Point(13, 56)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 17)
+        Me.Label2.Size = New System.Drawing.Size(63, 25)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "จำนวน"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label3.Location = New System.Drawing.Point(13, 107)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(48, 17)
+        Me.Label3.Size = New System.Drawing.Size(66, 25)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "เป็นเงิน"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label4.Location = New System.Drawing.Point(13, 144)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(46, 17)
+        Me.Label4.Size = New System.Drawing.Size(62, 25)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "ส่วนลด"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label5.Location = New System.Drawing.Point(13, 185)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(57, 17)
+        Me.Label5.Size = New System.Drawing.Size(78, 25)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "ราคาสิทธิ"
         '
         'txtPrice
         '
-        Me.txtPrice.Location = New System.Drawing.Point(84, 10)
+        Me.txtPrice.Location = New System.Drawing.Point(107, 17)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(100, 22)
         Me.txtPrice.TabIndex = 5
         '
         'txtUnit
         '
-        Me.txtUnit.Location = New System.Drawing.Point(84, 53)
+        Me.txtUnit.Location = New System.Drawing.Point(107, 56)
         Me.txtUnit.Name = "txtUnit"
         Me.txtUnit.Size = New System.Drawing.Size(100, 22)
         Me.txtUnit.TabIndex = 6
@@ -98,7 +103,7 @@ Partial Class frmPractice5
         '
         Me.lblTotal.AutoSize = True
         Me.lblTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTotal.Location = New System.Drawing.Point(84, 107)
+        Me.lblTotal.Location = New System.Drawing.Point(107, 107)
         Me.lblTotal.MinimumSize = New System.Drawing.Size(100, 20)
         Me.lblTotal.Name = "lblTotal"
         Me.lblTotal.Size = New System.Drawing.Size(100, 20)
@@ -108,7 +113,7 @@ Partial Class frmPractice5
         '
         Me.lblDiscount.AutoSize = True
         Me.lblDiscount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDiscount.Location = New System.Drawing.Point(84, 144)
+        Me.lblDiscount.Location = New System.Drawing.Point(107, 144)
         Me.lblDiscount.MinimumSize = New System.Drawing.Size(100, 20)
         Me.lblDiscount.Name = "lblDiscount"
         Me.lblDiscount.Size = New System.Drawing.Size(100, 20)
@@ -118,7 +123,7 @@ Partial Class frmPractice5
         '
         Me.lblNet.AutoSize = True
         Me.lblNet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblNet.Location = New System.Drawing.Point(84, 185)
+        Me.lblNet.Location = New System.Drawing.Point(107, 190)
         Me.lblNet.MinimumSize = New System.Drawing.Size(100, 20)
         Me.lblNet.Name = "lblNet"
         Me.lblNet.Size = New System.Drawing.Size(100, 20)
@@ -126,7 +131,7 @@ Partial Class frmPractice5
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(84, 229)
+        Me.btnCalculate.Location = New System.Drawing.Point(107, 227)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(100, 23)
         Me.btnCalculate.TabIndex = 10
@@ -137,7 +142,7 @@ Partial Class frmPractice5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(223, 264)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblNet)
         Me.Controls.Add(Me.lblDiscount)

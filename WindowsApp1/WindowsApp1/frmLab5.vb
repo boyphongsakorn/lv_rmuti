@@ -5,15 +5,15 @@
         lblDiscount.Text = ""
         lblGrant.Text = ""
         lblCredit.Text = ""
-        gpbPaid.Enabled = True
+        gpbPaid.Enabled = True 'ถ้าเป็น ลูกค้าภายใน ให้กรอบชำระเงินใช้ได้'
     End Sub
 
     Private Sub radNone_CheckedChanged(sender As Object, e As EventArgs) Handles radNone.CheckedChanged
         lblDiscount.Text = ""
         lblGrant.Text = ""
         lblCredit.Text = ""
-        radCash.Focus()
-        gpbPaid.Enabled = False
+        radCash.Focus() 'ภายนอก บังคับให้ตัวเลือกการชำระเงินเป็นแบบ สด'
+        gpbPaid.Enabled = False 'ถ้าเป็น ลูกค้าภายนอก ให้กรอบชำระเงินใช้งานไม่ได้'
     End Sub
 
     Private Sub radCash_CheckedChanged(sender As Object, e As EventArgs) Handles radCash.CheckedChanged
