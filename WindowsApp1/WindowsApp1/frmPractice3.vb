@@ -36,4 +36,14 @@
         Dim Lab5 As frmLab5 = New frmLab5
         Lab5.Show()
     End Sub
+
+    Private Sub Practice2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Practice2ToolStripMenuItem.Click
+        Dim Practice2 As frmPractice2 = New frmPractice2
+        Practice2.Show()
+    End Sub
+
+    Private Sub Lab6ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Lab6ToolStripMenuItem.Click
+        Dim Lab6 As frmLab6 = New frmLab6
+        Lab6.Show()
+    End Sub
 End Class

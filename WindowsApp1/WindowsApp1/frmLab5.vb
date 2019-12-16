@@ -38,7 +38,7 @@
     End Sub
 
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
-        If (txtProduct.Text = "" Or txtProPrice.Text = "" Or txtProAmount.Text = "") Then
+        If (txtProduct.Text = "" Or txtProPrice.Text = "" Or txtProAmount.Text = "" Or Val(txtProPrice.Text) <= 0 Or Val(txtProAmount.Text) <= 0) Then
             MessageBox.Show("ป้อนข้อมูลไม่สมบูรณ์")
             Exit Sub
         End If

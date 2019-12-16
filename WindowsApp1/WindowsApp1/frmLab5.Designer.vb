@@ -53,9 +53,10 @@ Partial Class frmLab5
         Me.GroupBox1.BackColor = System.Drawing.Color.Chartreuse
         Me.GroupBox1.Controls.Add(Me.radNone)
         Me.GroupBox1.Controls.Add(Me.radCustomer)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 195)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(151, 57)
+        Me.GroupBox1.Size = New System.Drawing.Size(195, 57)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "กลุ่มลูกค้า"
@@ -63,9 +64,9 @@ Partial Class frmLab5
         'radNone
         '
         Me.radNone.AutoSize = True
-        Me.radNone.Location = New System.Drawing.Point(73, 25)
+        Me.radNone.Location = New System.Drawing.Point(95, 25)
         Me.radNone.Name = "radNone"
-        Me.radNone.Size = New System.Drawing.Size(74, 21)
+        Me.radNone.Size = New System.Drawing.Size(94, 29)
         Me.radNone.TabIndex = 1
         Me.radNone.TabStop = True
         Me.radNone.Text = "ภายนอก"
@@ -76,7 +77,7 @@ Partial Class frmLab5
         Me.radCustomer.AutoSize = True
         Me.radCustomer.Location = New System.Drawing.Point(6, 25)
         Me.radCustomer.Name = "radCustomer"
-        Me.radCustomer.Size = New System.Drawing.Size(65, 21)
+        Me.radCustomer.Size = New System.Drawing.Size(83, 29)
         Me.radCustomer.TabIndex = 0
         Me.radCustomer.TabStop = True
         Me.radCustomer.Text = "ภายใน"
@@ -88,7 +89,8 @@ Partial Class frmLab5
         Me.gpbPaid.Controls.Add(Me.radCredit)
         Me.gpbPaid.Controls.Add(Me.radCash)
         Me.gpbPaid.Enabled = False
-        Me.gpbPaid.Location = New System.Drawing.Point(169, 195)
+        Me.gpbPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.gpbPaid.Location = New System.Drawing.Point(213, 195)
         Me.gpbPaid.Name = "gpbPaid"
         Me.gpbPaid.Size = New System.Drawing.Size(148, 57)
         Me.gpbPaid.TabIndex = 1
@@ -100,7 +102,7 @@ Partial Class frmLab5
         Me.radCredit.AutoSize = True
         Me.radCredit.Location = New System.Drawing.Point(66, 25)
         Me.radCredit.Name = "radCredit"
-        Me.radCredit.Size = New System.Drawing.Size(64, 21)
+        Me.radCredit.Size = New System.Drawing.Size(79, 29)
         Me.radCredit.TabIndex = 3
         Me.radCredit.TabStop = True
         Me.radCredit.Text = "เครคิต"
@@ -111,7 +113,7 @@ Partial Class frmLab5
         Me.radCash.AutoSize = True
         Me.radCash.Location = New System.Drawing.Point(6, 25)
         Me.radCash.Name = "radCash"
-        Me.radCash.Size = New System.Drawing.Size(44, 21)
+        Me.radCash.Size = New System.Drawing.Size(53, 29)
         Me.radCash.TabIndex = 2
         Me.radCash.TabStop = True
         Me.radCash.Text = "สด"
@@ -159,15 +161,15 @@ Partial Class frmLab5
         '
         'txtProduct
         '
-        Me.txtProduct.Location = New System.Drawing.Point(117, 43)
+        Me.txtProduct.Location = New System.Drawing.Point(161, 37)
         Me.txtProduct.MinimumSize = New System.Drawing.Size(200, 30)
         Me.txtProduct.Name = "txtProduct"
-        Me.txtProduct.Size = New System.Drawing.Size(200, 22)
+        Me.txtProduct.Size = New System.Drawing.Size(200, 30)
         Me.txtProduct.TabIndex = 6
         '
         'txtProPrice
         '
-        Me.txtProPrice.Location = New System.Drawing.Point(217, 73)
+        Me.txtProPrice.Location = New System.Drawing.Point(261, 76)
         Me.txtProPrice.MinimumSize = New System.Drawing.Size(100, 30)
         Me.txtProPrice.Name = "txtProPrice"
         Me.txtProPrice.Size = New System.Drawing.Size(100, 30)
@@ -175,7 +177,7 @@ Partial Class frmLab5
         '
         'txtProAmount
         '
-        Me.txtProAmount.Location = New System.Drawing.Point(217, 113)
+        Me.txtProAmount.Location = New System.Drawing.Point(261, 114)
         Me.txtProAmount.MinimumSize = New System.Drawing.Size(100, 30)
         Me.txtProAmount.Name = "txtProAmount"
         Me.txtProAmount.Size = New System.Drawing.Size(100, 30)
@@ -186,7 +188,7 @@ Partial Class frmLab5
         Me.lblSumSale.AutoSize = True
         Me.lblSumSale.BackColor = System.Drawing.Color.White
         Me.lblSumSale.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblSumSale.Location = New System.Drawing.Point(217, 151)
+        Me.lblSumSale.Location = New System.Drawing.Point(261, 151)
         Me.lblSumSale.MinimumSize = New System.Drawing.Size(100, 30)
         Me.lblSumSale.Name = "lblSumSale"
         Me.lblSumSale.Size = New System.Drawing.Size(100, 30)
@@ -227,7 +229,7 @@ Partial Class frmLab5
         Me.lblDiscount.AutoSize = True
         Me.lblDiscount.BackColor = System.Drawing.Color.White
         Me.lblDiscount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDiscount.Location = New System.Drawing.Point(216, 266)
+        Me.lblDiscount.Location = New System.Drawing.Point(261, 266)
         Me.lblDiscount.MinimumSize = New System.Drawing.Size(100, 30)
         Me.lblDiscount.Name = "lblDiscount"
         Me.lblDiscount.Size = New System.Drawing.Size(100, 30)
@@ -238,7 +240,7 @@ Partial Class frmLab5
         Me.lblGrant.AutoSize = True
         Me.lblGrant.BackColor = System.Drawing.Color.White
         Me.lblGrant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblGrant.Location = New System.Drawing.Point(217, 303)
+        Me.lblGrant.Location = New System.Drawing.Point(261, 303)
         Me.lblGrant.MinimumSize = New System.Drawing.Size(100, 30)
         Me.lblGrant.Name = "lblGrant"
         Me.lblGrant.Size = New System.Drawing.Size(100, 30)
@@ -249,7 +251,7 @@ Partial Class frmLab5
         Me.lblCredit.AutoSize = True
         Me.lblCredit.BackColor = System.Drawing.Color.White
         Me.lblCredit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblCredit.Location = New System.Drawing.Point(217, 341)
+        Me.lblCredit.Location = New System.Drawing.Point(261, 341)
         Me.lblCredit.MinimumSize = New System.Drawing.Size(100, 30)
         Me.lblCredit.Name = "lblCredit"
         Me.lblCredit.Size = New System.Drawing.Size(100, 30)
@@ -257,7 +259,7 @@ Partial Class frmLab5
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(217, 379)
+        Me.btnCalculate.Location = New System.Drawing.Point(261, 384)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(100, 23)
         Me.btnCalculate.TabIndex = 16
@@ -278,7 +280,7 @@ Partial Class frmLab5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(328, 419)
+        Me.ClientSize = New System.Drawing.Size(373, 419)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblCredit)

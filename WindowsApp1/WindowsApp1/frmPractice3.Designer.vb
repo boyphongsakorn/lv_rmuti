@@ -71,6 +71,7 @@ Partial Class frmPractice3
         Me.Lab13ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Lab14ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Lab15ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -268,31 +269,31 @@ Partial Class frmPractice3
         'Practice1ToolStripMenuItem
         '
         Me.Practice1ToolStripMenuItem.Name = "Practice1ToolStripMenuItem"
-        Me.Practice1ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Practice1ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
         Me.Practice1ToolStripMenuItem.Text = "Practice 1"
         '
         'Practice2ToolStripMenuItem
         '
         Me.Practice2ToolStripMenuItem.Name = "Practice2ToolStripMenuItem"
-        Me.Practice2ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Practice2ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
         Me.Practice2ToolStripMenuItem.Text = "Practice 2"
         '
         'Practice3ToolStripMenuItem
         '
         Me.Practice3ToolStripMenuItem.Name = "Practice3ToolStripMenuItem"
-        Me.Practice3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Practice3ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
         Me.Practice3ToolStripMenuItem.Text = "Practice 3 (This)"
         '
         'Practice4ToolStripMenuItem
         '
         Me.Practice4ToolStripMenuItem.Name = "Practice4ToolStripMenuItem"
-        Me.Practice4ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Practice4ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
         Me.Practice4ToolStripMenuItem.Text = "Practice 4"
         '
         'Practice5ToolStripMenuItem
         '
         Me.Practice5ToolStripMenuItem.Name = "Practice5ToolStripMenuItem"
-        Me.Practice5ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Practice5ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
         Me.Practice5ToolStripMenuItem.Text = "Practice 5"
         '
         'LabToolStripMenuItem
@@ -392,12 +393,24 @@ Partial Class frmPractice3
         Me.Lab15ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.Lab15ToolStripMenuItem.Text = "Lab15"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label1.Location = New System.Drawing.Point(149, 110)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(459, 138)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "พงศกร วิเศษธร" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "62342310153-8" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'frmPractice3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmPractice3"
@@ -459,4 +472,5 @@ Partial Class frmPractice3
     Friend WithEvents Lab15ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Practice4ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Practice5ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label1 As Label
 End Class
