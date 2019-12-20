@@ -26,6 +26,13 @@ Partial Class frmLab6
         Me.chkCar = New System.Windows.Forms.CheckBox()
         Me.lblPrice = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.lblOption4 = New System.Windows.Forms.Label()
         Me.lblOption3 = New System.Windows.Forms.Label()
         Me.lblOption2 = New System.Windows.Forms.Label()
@@ -35,7 +42,13 @@ Partial Class frmLab6
         Me.chkOption3 = New System.Windows.Forms.CheckBox()
         Me.chkOption4 = New System.Windows.Forms.CheckBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.lblPromotion1 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.lblPromotion2 = New System.Windows.Forms.Label()
         Me.lblPromotion3 = New System.Windows.Forms.Label()
         Me.chkRegis = New System.Windows.Forms.CheckBox()
@@ -43,19 +56,6 @@ Partial Class frmLab6
         Me.chkRaw = New System.Windows.Forms.CheckBox()
         Me.lblNetPrice = New System.Windows.Forms.Label()
         Me.label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -118,6 +118,69 @@ Partial Class frmLab6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "อุปกรณเสริม"
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(7, 157)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(46, 17)
+        Me.Label12.TabIndex = 19
+        Me.Label12.Text = "ล้อแม็ก"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(7, 123)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(67, 17)
+        Me.Label11.TabIndex = 18
+        Me.Label11.Text = "แล็คหลังคา"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(6, 90)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(70, 17)
+        Me.Label10.TabIndex = 17
+        Me.Label10.Text = "ชุดเสริมข้าง"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(6, 59)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(66, 17)
+        Me.Label9.TabIndex = 16
+        Me.Label9.Text = "กันชนหน้า"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(159, 22)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(34, 17)
+        Me.Label5.TabIndex = 15
+        Me.Label5.Text = "เลือก"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(99, 22)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(35, 17)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "ราคา"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(7, 22)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(49, 17)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "รายการ"
+        '
         'lblOption4
         '
         Me.lblOption4.AutoSize = True
@@ -127,6 +190,7 @@ Partial Class frmLab6
         Me.lblOption4.Size = New System.Drawing.Size(50, 19)
         Me.lblOption4.TabIndex = 12
         Me.lblOption4.Text = "30000"
+        Me.lblOption4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblOption3
         '
@@ -137,6 +201,7 @@ Partial Class frmLab6
         Me.lblOption3.Size = New System.Drawing.Size(50, 19)
         Me.lblOption3.TabIndex = 11
         Me.lblOption3.Text = "25000"
+        Me.lblOption3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblOption2
         '
@@ -146,7 +211,8 @@ Partial Class frmLab6
         Me.lblOption2.Name = "lblOption2"
         Me.lblOption2.Size = New System.Drawing.Size(50, 19)
         Me.lblOption2.TabIndex = 10
-        Me.lblOption2.Text = "50000"
+        Me.lblOption2.Text = "55000"
+        Me.lblOption2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblOption1
         '
@@ -157,6 +223,7 @@ Partial Class frmLab6
         Me.lblOption1.Size = New System.Drawing.Size(50, 19)
         Me.lblOption1.TabIndex = 6
         Me.lblOption1.Text = "35000"
+        Me.lblOption1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'chkOption1
         '
@@ -217,6 +284,42 @@ Partial Class frmLab6
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "สิทธิพิเศษ"
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(9, 55)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(102, 17)
+        Me.Label15.TabIndex = 22
+        Me.Label15.Text = "ประกันภัยชั้นหนึ่ง"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(9, 84)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(50, 17)
+        Me.Label14.TabIndex = 21
+        Me.Label14.Text = "ทำ พรบ"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(9, 116)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(65, 17)
+        Me.Label13.TabIndex = 20
+        Me.Label13.Text = "จดทะเบียน"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(160, 24)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(34, 17)
+        Me.Label6.TabIndex = 18
+        Me.Label6.Text = "เลือก"
+        '
         'lblPromotion1
         '
         Me.lblPromotion1.AutoSize = True
@@ -226,6 +329,25 @@ Partial Class frmLab6
         Me.lblPromotion1.Size = New System.Drawing.Size(50, 19)
         Me.lblPromotion1.TabIndex = 13
         Me.lblPromotion1.Text = "25000"
+        Me.lblPromotion1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(100, 24)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(35, 17)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "ราคา"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(8, 24)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(49, 17)
+        Me.Label8.TabIndex = 16
+        Me.Label8.Text = "รายการ"
         '
         'lblPromotion2
         '
@@ -236,16 +358,19 @@ Partial Class frmLab6
         Me.lblPromotion2.Size = New System.Drawing.Size(50, 19)
         Me.lblPromotion2.TabIndex = 14
         Me.lblPromotion2.Text = "12000"
+        Me.lblPromotion2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblPromotion3
         '
         Me.lblPromotion3.AutoSize = True
         Me.lblPromotion3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPromotion3.Location = New System.Drawing.Point(114, 116)
+        Me.lblPromotion3.MinimumSize = New System.Drawing.Size(50, 19)
         Me.lblPromotion3.Name = "lblPromotion3"
-        Me.lblPromotion3.Size = New System.Drawing.Size(42, 19)
+        Me.lblPromotion3.Size = New System.Drawing.Size(50, 19)
         Me.lblPromotion3.TabIndex = 15
         Me.lblPromotion3.Text = "5000"
+        Me.lblPromotion3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'chkRegis
         '
@@ -289,128 +414,11 @@ Partial Class frmLab6
         'label3
         '
         Me.label3.AutoSize = True
-        Me.label3.Location = New System.Drawing.Point(123, 329)
+        Me.label3.Location = New System.Drawing.Point(123, 345)
         Me.label3.Name = "label3"
         Me.label3.Size = New System.Drawing.Size(57, 17)
         Me.label3.TabIndex = 7
         Me.label3.Text = "ราคาสุทธิ"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(7, 22)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 17)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "รายการ"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(99, 22)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(35, 17)
-        Me.Label4.TabIndex = 14
-        Me.Label4.Text = "ราคา"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(159, 22)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(34, 17)
-        Me.Label5.TabIndex = 15
-        Me.Label5.Text = "เลือก"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(160, 24)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(34, 17)
-        Me.Label6.TabIndex = 18
-        Me.Label6.Text = "เลือก"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(100, 24)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(35, 17)
-        Me.Label7.TabIndex = 17
-        Me.Label7.Text = "ราคา"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(8, 24)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 17)
-        Me.Label8.TabIndex = 16
-        Me.Label8.Text = "รายการ"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(6, 59)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(49, 17)
-        Me.Label9.TabIndex = 16
-        Me.Label9.Text = "รายการ"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(6, 90)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(49, 17)
-        Me.Label10.TabIndex = 17
-        Me.Label10.Text = "รายการ"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(7, 123)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 17)
-        Me.Label11.TabIndex = 18
-        Me.Label11.Text = "รายการ"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(7, 157)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(49, 17)
-        Me.Label12.TabIndex = 19
-        Me.Label12.Text = "รายการ"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(9, 116)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(49, 17)
-        Me.Label13.TabIndex = 20
-        Me.Label13.Text = "รายการ"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(9, 84)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(49, 17)
-        Me.Label14.TabIndex = 21
-        Me.Label14.Text = "รายการ"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(9, 55)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(49, 17)
-        Me.Label15.TabIndex = 22
-        Me.Label15.Text = "รายการ"
         '
         'frmLab6
         '
