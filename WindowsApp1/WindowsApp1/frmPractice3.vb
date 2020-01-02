@@ -51,4 +51,14 @@
         Dim Lab7 As frmLab7 = New frmLab7
         Lab7.Show()
     End Sub
+
+    Private Sub Practice6ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Practice6ToolStripMenuItem.Click
+        frmPractice6.Show()
+    End Sub
+
+    Private Sub frmPractice3_ClientSizeChanged(sender As Object, e As EventArgs) Handles Me.ClientSizeChanged
+        Label1.Location = New Point((Me.Size.Width / 2) - 188.5, (Me.Size.Height / 2) - 55)
+
+    End Sub
+
 End Class
