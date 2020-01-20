@@ -61,4 +61,7 @@
 
     End Sub
 
+    Private Sub Lab9ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Lab9ToolStripMenuItem.Click
+        frmLab9.Show()
+    End Sub
 End Class
