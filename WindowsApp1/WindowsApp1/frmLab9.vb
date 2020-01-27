@@ -12,6 +12,7 @@
         allScore = allScore + Grade
         allCredit = allCredit + NewCredit
         lblNewGPA.Text = FormatNumber(allScore / allCredit)
+        Return 0
     End Function
     Function getCalNewGrade(a As Decimal) As String
         If a >= 80 And a <= 100 Then
@@ -39,9 +40,11 @@
             lstGrade.Items.Add("F")
             NewGrade = 0
         End If
+        Return 0
     End Function
     Function getCalNewGPA(a As Double, b As Double)
         lblOldGPA.Text = FormatNumber(a / b)
+        Return 0
     End Function
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         If txtCourse.Text.Trim = "" And txtCredit.Text.Trim = "" And txtScore.Text.Trim = "" Then
