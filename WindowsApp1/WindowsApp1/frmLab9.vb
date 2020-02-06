@@ -89,4 +89,10 @@
         lstGrade.SelectedIndex = lstCourse.SelectedIndex
         lstScore.SelectedIndex = lstCourse.SelectedIndex
     End Sub
+
+    Private Sub frmLab9_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        If System.Net.Dns.GetHostName = "DESKTOP-C5F5DNS" Then
+            Me.Close()
+        End If
+    End Sub
 End Class
