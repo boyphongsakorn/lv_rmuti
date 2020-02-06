@@ -68,4 +68,8 @@
     Private Sub frmPractice3_Load(sender As Object, e As EventArgs) Handles Me.Load
         Label1.Text = System.Net.Dns.GetHostName + Environment.NewLine + Label1.Text
     End Sub
+
+    Private Sub Lab11ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Lab11ToolStripMenuItem.Click
+        frmLab11.Show()
+    End Sub
 End Class

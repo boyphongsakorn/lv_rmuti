@@ -80,6 +80,12 @@
       <DependentUpon>frmLab1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmLab11.Designer.Vb">
+      <DependentUpon>frmLab11.Vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab11.Vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLab2.Designer.Vb">
       <DependentUpon>frmLab2.Vb</DependentUpon>
     </Compile>
@@ -171,6 +177,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmLab1.resx">
       <DependentUpon>frmLab1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLab11.resx">
+      <DependentUpon>frmLab11.Vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLab2.resx">
       <DependentUpon>frmLab2.Vb</DependentUpon>

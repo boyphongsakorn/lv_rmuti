@@ -82,7 +82,8 @@ Partial Class frmPractice3
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.FormatToolStripMenuItem, Me.HelpToolStripMenuItem, Me.ViewToolStripMenuItem, Me.PracticeToolStripMenuItem, Me.LabToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(600, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -91,7 +92,7 @@ Partial Class frmPractice3
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem, Me.SaveAsToolStripMenuItem, Me.SaveToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'NewToolStripMenuItem
@@ -99,327 +100,329 @@ Partial Class frmPractice3
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         Me.NewToolStripMenuItem.ShortcutKeyDisplayString = ""
         Me.NewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'CloseToolStripMenuItem
         '
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'SaveAsToolStripMenuItem
         '
         Me.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem"
-        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.SaveAsToolStripMenuItem.Text = "Save As"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
         Me.PrintToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.PrintToolStripMenuItem.Text = "Print"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UndoToolStripMenuItem, Me.CutToolStripMenuItem, Me.CopyToolStripMenuItem, Me.PasteToolStripMenuItem, Me.FindToolStripMenuItem, Me.ReplaceToolStripMenuItem})
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(49, 24)
+        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
         Me.EditToolStripMenuItem.Text = "Edit"
         '
         'UndoToolStripMenuItem
         '
         Me.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem"
         Me.UndoToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Z), System.Windows.Forms.Keys)
-        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.UndoToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.UndoToolStripMenuItem.Text = "Undo"
         '
         'CutToolStripMenuItem
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.CutToolStripMenuItem.Text = "Cut"
         '
         'CopyToolStripMenuItem
         '
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         Me.CopyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.CopyToolStripMenuItem.Text = "Copy"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         Me.PasteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.PasteToolStripMenuItem.Text = "Paste"
         '
         'FindToolStripMenuItem
         '
         Me.FindToolStripMenuItem.Name = "FindToolStripMenuItem"
         Me.FindToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.F), System.Windows.Forms.Keys)
-        Me.FindToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.FindToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.FindToolStripMenuItem.Text = "Find"
         '
         'ReplaceToolStripMenuItem
         '
         Me.ReplaceToolStripMenuItem.Name = "ReplaceToolStripMenuItem"
         Me.ReplaceToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.H), System.Windows.Forms.Keys)
-        Me.ReplaceToolStripMenuItem.Size = New System.Drawing.Size(198, 26)
+        Me.ReplaceToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.ReplaceToolStripMenuItem.Text = "Replace"
         '
         'FormatToolStripMenuItem
         '
         Me.FormatToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FontToolStripMenuItem, Me.ParagraphToolStripMenuItem, Me.AlignmentToolStripMenuItem, Me.ColorToolStripMenuItem})
         Me.FormatToolStripMenuItem.Name = "FormatToolStripMenuItem"
-        Me.FormatToolStripMenuItem.Size = New System.Drawing.Size(70, 24)
+        Me.FormatToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
         Me.FormatToolStripMenuItem.Text = "Format"
         '
         'FontToolStripMenuItem
         '
         Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
-        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
+        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.FontToolStripMenuItem.Text = "Font"
         '
         'ParagraphToolStripMenuItem
         '
         Me.ParagraphToolStripMenuItem.Name = "ParagraphToolStripMenuItem"
-        Me.ParagraphToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
+        Me.ParagraphToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.ParagraphToolStripMenuItem.Text = "Paragraph"
         '
         'AlignmentToolStripMenuItem
         '
         Me.AlignmentToolStripMenuItem.Name = "AlignmentToolStripMenuItem"
-        Me.AlignmentToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
+        Me.AlignmentToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.AlignmentToolStripMenuItem.Text = "Alignment"
         '
         'ColorToolStripMenuItem
         '
         Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
-        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
+        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.ColorToolStripMenuItem.Text = "Color"
         '
         'HelpToolStripMenuItem
         '
         Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.SystemInformationToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(221, 26)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'SystemInformationToolStripMenuItem
         '
         Me.SystemInformationToolStripMenuItem.Name = "SystemInformationToolStripMenuItem"
-        Me.SystemInformationToolStripMenuItem.Size = New System.Drawing.Size(221, 26)
+        Me.SystemInformationToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
         Me.SystemInformationToolStripMenuItem.Text = "System Information"
         '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolbarToolStripMenuItem, Me.StatusBarToolStripMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.ViewToolStripMenuItem.Text = "View"
         '
         'ToolbarToolStripMenuItem
         '
         Me.ToolbarToolStripMenuItem.Name = "ToolbarToolStripMenuItem"
-        Me.ToolbarToolStripMenuItem.Size = New System.Drawing.Size(158, 26)
+        Me.ToolbarToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.ToolbarToolStripMenuItem.Text = "Toolbar"
         '
         'StatusBarToolStripMenuItem
         '
         Me.StatusBarToolStripMenuItem.Name = "StatusBarToolStripMenuItem"
-        Me.StatusBarToolStripMenuItem.Size = New System.Drawing.Size(158, 26)
+        Me.StatusBarToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.StatusBarToolStripMenuItem.Text = "Status Bar"
         '
         'PracticeToolStripMenuItem
         '
         Me.PracticeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Practice1ToolStripMenuItem, Me.Practice2ToolStripMenuItem, Me.Practice3ToolStripMenuItem, Me.Practice4ToolStripMenuItem, Me.Practice5ToolStripMenuItem, Me.Practice6ToolStripMenuItem})
         Me.PracticeToolStripMenuItem.Name = "PracticeToolStripMenuItem"
-        Me.PracticeToolStripMenuItem.Size = New System.Drawing.Size(75, 24)
+        Me.PracticeToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.PracticeToolStripMenuItem.Text = "Practice"
         '
         'Practice1ToolStripMenuItem
         '
         Me.Practice1ToolStripMenuItem.Name = "Practice1ToolStripMenuItem"
-        Me.Practice1ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.Practice1ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Practice1ToolStripMenuItem.Text = "Practice 1"
         '
         'Practice2ToolStripMenuItem
         '
         Me.Practice2ToolStripMenuItem.Name = "Practice2ToolStripMenuItem"
-        Me.Practice2ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.Practice2ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Practice2ToolStripMenuItem.Text = "Practice 2"
         '
         'Practice3ToolStripMenuItem
         '
         Me.Practice3ToolStripMenuItem.Name = "Practice3ToolStripMenuItem"
-        Me.Practice3ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.Practice3ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Practice3ToolStripMenuItem.Text = "Practice 3 (This)"
         '
         'Practice4ToolStripMenuItem
         '
         Me.Practice4ToolStripMenuItem.Name = "Practice4ToolStripMenuItem"
-        Me.Practice4ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.Practice4ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Practice4ToolStripMenuItem.Text = "Practice 4"
         '
         'Practice5ToolStripMenuItem
         '
         Me.Practice5ToolStripMenuItem.Name = "Practice5ToolStripMenuItem"
-        Me.Practice5ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.Practice5ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Practice5ToolStripMenuItem.Text = "Practice 5"
         '
         'Practice6ToolStripMenuItem
         '
         Me.Practice6ToolStripMenuItem.Name = "Practice6ToolStripMenuItem"
-        Me.Practice6ToolStripMenuItem.Size = New System.Drawing.Size(196, 26)
+        Me.Practice6ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Practice6ToolStripMenuItem.Text = "Practice 6"
         '
         'LabToolStripMenuItem
         '
         Me.LabToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Lab1ToolStripMenuItem, Me.Lab2ToolStripMenuItem, Me.Lab3ToolStripMenuItem, Me.Lab4ToolStripMenuItem, Me.Lab5ToolStripMenuItem, Me.Lab6ToolStripMenuItem, Me.Lab7ToolStripMenuItem, Me.Lab8ToolStripMenuItem, Me.Lab9ToolStripMenuItem, Me.Lab10ToolStripMenuItem, Me.Lab11ToolStripMenuItem, Me.Lab12ToolStripMenuItem, Me.Lab13ToolStripMenuItem, Me.Lab14ToolStripMenuItem, Me.Lab15ToolStripMenuItem})
         Me.LabToolStripMenuItem.Name = "LabToolStripMenuItem"
-        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(47, 24)
+        Me.LabToolStripMenuItem.Size = New System.Drawing.Size(38, 20)
         Me.LabToolStripMenuItem.Text = "Lab"
         '
         'Lab1ToolStripMenuItem
         '
         Me.Lab1ToolStripMenuItem.Name = "Lab1ToolStripMenuItem"
-        Me.Lab1ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab1ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab1ToolStripMenuItem.Text = "Lab1"
         '
         'Lab2ToolStripMenuItem
         '
         Me.Lab2ToolStripMenuItem.Name = "Lab2ToolStripMenuItem"
-        Me.Lab2ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab2ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab2ToolStripMenuItem.Text = "Lab2"
         '
         'Lab3ToolStripMenuItem
         '
         Me.Lab3ToolStripMenuItem.Name = "Lab3ToolStripMenuItem"
-        Me.Lab3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab3ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab3ToolStripMenuItem.Text = "Lab3"
         '
         'Lab4ToolStripMenuItem
         '
         Me.Lab4ToolStripMenuItem.Name = "Lab4ToolStripMenuItem"
-        Me.Lab4ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab4ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab4ToolStripMenuItem.Text = "Lab4"
         '
         'Lab5ToolStripMenuItem
         '
         Me.Lab5ToolStripMenuItem.Name = "Lab5ToolStripMenuItem"
-        Me.Lab5ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab5ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab5ToolStripMenuItem.Text = "Lab5"
         '
         'Lab6ToolStripMenuItem
         '
         Me.Lab6ToolStripMenuItem.Name = "Lab6ToolStripMenuItem"
-        Me.Lab6ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab6ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab6ToolStripMenuItem.Text = "Lab6"
         '
         'Lab7ToolStripMenuItem
         '
         Me.Lab7ToolStripMenuItem.Name = "Lab7ToolStripMenuItem"
-        Me.Lab7ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab7ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab7ToolStripMenuItem.Text = "Lab7"
         '
         'Lab8ToolStripMenuItem
         '
         Me.Lab8ToolStripMenuItem.Name = "Lab8ToolStripMenuItem"
-        Me.Lab8ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab8ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab8ToolStripMenuItem.Text = "Lab8"
         '
         'Lab9ToolStripMenuItem
         '
         Me.Lab9ToolStripMenuItem.Name = "Lab9ToolStripMenuItem"
-        Me.Lab9ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab9ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab9ToolStripMenuItem.Text = "Lab9"
         '
         'Lab10ToolStripMenuItem
         '
         Me.Lab10ToolStripMenuItem.Name = "Lab10ToolStripMenuItem"
-        Me.Lab10ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab10ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab10ToolStripMenuItem.Text = "Lab10"
         '
         'Lab11ToolStripMenuItem
         '
         Me.Lab11ToolStripMenuItem.Name = "Lab11ToolStripMenuItem"
-        Me.Lab11ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab11ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab11ToolStripMenuItem.Text = "Lab11"
         '
         'Lab12ToolStripMenuItem
         '
         Me.Lab12ToolStripMenuItem.Name = "Lab12ToolStripMenuItem"
-        Me.Lab12ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab12ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab12ToolStripMenuItem.Text = "Lab12"
         '
         'Lab13ToolStripMenuItem
         '
         Me.Lab13ToolStripMenuItem.Name = "Lab13ToolStripMenuItem"
-        Me.Lab13ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab13ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab13ToolStripMenuItem.Text = "Lab13"
         '
         'Lab14ToolStripMenuItem
         '
         Me.Lab14ToolStripMenuItem.Name = "Lab14ToolStripMenuItem"
-        Me.Lab14ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab14ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab14ToolStripMenuItem.Text = "Lab14"
         '
         'Lab15ToolStripMenuItem
         '
         Me.Lab15ToolStripMenuItem.Name = "Lab15ToolStripMenuItem"
-        Me.Lab15ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Lab15ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.Lab15ToolStripMenuItem.Text = "Lab15"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Label1.Location = New System.Drawing.Point(229, 177)
+        Me.Label1.Location = New System.Drawing.Point(172, 144)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(377, 110)
+        Me.Label1.Size = New System.Drawing.Size(298, 88)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "พงศกร วิเศษธร" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "62342310153-8" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmPractice3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmPractice3"
         Me.Text = "frmPractice3"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
