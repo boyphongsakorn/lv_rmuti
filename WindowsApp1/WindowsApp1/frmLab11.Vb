@@ -18,6 +18,7 @@ Public Class frmLab11
     End Function
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Process.Start("cmd", "/c start excel C:\Users\boy15\OneDrive\เอกสาร\array.xlsx")
         Me.Close()
     End Sub
 
@@ -55,5 +56,6 @@ Public Class frmLab11
 
     Private Sub btnChoice10_Click(sender As Object, e As EventArgs) Handles btnChoice10.Click
         dgvData.DataSource = sendselect("SELECT * FROM dbo.Orders WHERE ShipCountry = 'ITALY'")
+
     End Sub
 End Class
