@@ -18,7 +18,6 @@ Public Class frmLab11
     End Function
 
     Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
-        Process.Start("cmd", "/c start excel C:\Users\boy15\OneDrive\เอกสาร\array.xlsx")
         Me.Close()
     End Sub
 
@@ -35,7 +34,7 @@ Public Class frmLab11
     End Sub
 
     Private Sub btnChoice5_Click(sender As Object, e As EventArgs) Handles btnChoice5.Click
-        dgvData.DataSource = sendselect("SELECT * FROM dbo.Products WHERE UnitsInStock < 10")
+        dgvData.DataSource = sendselect("SELECT ProductName,UnitsInStock FROM dbo.Products WHERE UnitsInStock < 10")
     End Sub
 
     Private Sub btnChoice6_Click(sender As Object, e As EventArgs) Handles btnChoice6.Click
