@@ -30,7 +30,9 @@ Public Class frmLab11
     End Sub
 
     Private Sub btnChoice4_Click(sender As Object, e As EventArgs) Handles btnChoice4.Click
-        dgvData.DataSource = sendselect("SELECT * FROM dbo.Customers WHERE ContactName = 'Yang Wang'")
+        'dgvData.DataSource = sendselect("SELECT dbo.Customers.ContactName,COUNT(dbo.[Order Details].OrderID) FROM dbo.Customers LEFT JOIN dbo.[Order Details] ON dbo.Orders.OrderID = dbo.[Order Details].OrderID LEFT JOIN dbo.Orders ON dbo.Orders.CustomerID = dbo.Customers.CustomerID WHERE dbo.Customers.ContactName = 'Yang Wang' GROUP BY dbo.Customers.ContactName")
+        'dgvData.DataSource = sendselect("SELECT dbo.Customers.ContactName,SUM(dbo.[Order Details].Quantity) FROM dbo.[Order Details] LEFT JOIN dbo.Orders ON dbo.Orders.OrderID = dbo.[Order Details].OrderID LEFT JOIN dbo.Customers ON dbo.Orders.CustomerID = dbo.Customers.CustomerID WHERE dbo.Customers.ContactName = 'Yang Wang' GROUP BY dbo.Customers.ContactName")
+        dgvData.DataSource = sendselect("SELECT dbo.Products.ProductName,dbo.[Order Details].Quantity FROM dbo.[Order Details] LEFT JOIN dbo.Products ON dbo.Products.ProductID = dbo.[Order Details].ProductID LEFT JOIN dbo.Orders ON dbo.Orders.OrderID = dbo.[Order Details].OrderID LEFT JOIN dbo.Customers ON dbo.Orders.CustomerID = dbo.Customers.CustomerID WHERE dbo.Customers.ContactName = 'Yang Wang'")
     End Sub
 
     Private Sub btnChoice5_Click(sender As Object, e As EventArgs) Handles btnChoice5.Click
