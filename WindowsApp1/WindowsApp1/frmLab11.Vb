@@ -40,7 +40,7 @@ Public Class frmLab11
     End Sub
 
     Private Sub btnChoice6_Click(sender As Object, e As EventArgs) Handles btnChoice6.Click
-        dgvData.DataSource = sendselect("SELECT * FROM [Order Details] WHERE OrderID = 10255")
+        dgvData.DataSource = sendselect("SELECT * FROM dbo.Products LEFT JOIN [Order Details] ON dbo.Products.ProductID = dbo.[Order Details].ProductID WHERE OrderID = 10255")
     End Sub
 
     Private Sub btnChoice7_Click(sender As Object, e As EventArgs) Handles btnChoice7.Click
@@ -48,7 +48,8 @@ Public Class frmLab11
     End Sub
 
     Private Sub btnChoice8_Click(sender As Object, e As EventArgs) Handles btnChoice8.Click
-        dgvData.DataSource = sendselect("SELECT * FROM dbo.Orders WHERE OrderID = 10347")
+        dgvData.DataSource = sendselect("SELECT * FROM dbo.Customers LEFT JOIN dbo.Orders ON dbo.Orders.CustomerID = dbo.Customers.CustomerID WHERE OrderID = 10347")
+        'dgvData.DataSource = sendselect("SELECT * FROM dbo.Orders WHERE OrderID = 10347")
     End Sub
 
     Private Sub btnChoice9_Click(sender As Object, e As EventArgs) Handles btnChoice9.Click

@@ -72,4 +72,8 @@
     Private Sub Lab11ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Lab11ToolStripMenuItem.Click
         frmLab11.Show()
     End Sub
+
+    Private Sub Lab12ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Lab12ToolStripMenuItem.Click
+        frmLab12.Show()
+    End Sub
 End Class

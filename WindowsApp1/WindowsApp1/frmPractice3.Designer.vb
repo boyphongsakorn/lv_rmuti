@@ -271,37 +271,37 @@ Partial Class frmPractice3
         'Practice1ToolStripMenuItem
         '
         Me.Practice1ToolStripMenuItem.Name = "Practice1ToolStripMenuItem"
-        Me.Practice1ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Practice1ToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.Practice1ToolStripMenuItem.Text = "Practice 1"
         '
         'Practice2ToolStripMenuItem
         '
         Me.Practice2ToolStripMenuItem.Name = "Practice2ToolStripMenuItem"
-        Me.Practice2ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Practice2ToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.Practice2ToolStripMenuItem.Text = "Practice 2"
         '
         'Practice3ToolStripMenuItem
         '
         Me.Practice3ToolStripMenuItem.Name = "Practice3ToolStripMenuItem"
-        Me.Practice3ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Practice3ToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.Practice3ToolStripMenuItem.Text = "Practice 3 (This)"
         '
         'Practice4ToolStripMenuItem
         '
         Me.Practice4ToolStripMenuItem.Name = "Practice4ToolStripMenuItem"
-        Me.Practice4ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Practice4ToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.Practice4ToolStripMenuItem.Text = "Practice 4"
         '
         'Practice5ToolStripMenuItem
         '
         Me.Practice5ToolStripMenuItem.Name = "Practice5ToolStripMenuItem"
-        Me.Practice5ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Practice5ToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.Practice5ToolStripMenuItem.Text = "Practice 5"
         '
         'Practice6ToolStripMenuItem
         '
         Me.Practice6ToolStripMenuItem.Name = "Practice6ToolStripMenuItem"
-        Me.Practice6ToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.Practice6ToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.Practice6ToolStripMenuItem.Text = "Practice 6"
         '
         'LabToolStripMenuItem
@@ -422,7 +422,7 @@ Partial Class frmPractice3
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmPractice3"
         Me.Text = "frmPractice3"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
