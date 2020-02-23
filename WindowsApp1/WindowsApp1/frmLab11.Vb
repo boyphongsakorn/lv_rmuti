@@ -3,14 +3,15 @@ Imports System.Data.SqlClient
 Public Class frmLab11
     Dim linesql As String = "Server=localhost\SQLEXPRESS;Database=northwind;Trusted_Connection=True;"
     Dim myConn As New SqlConnection(linesql)
+    Dim myDS As New DataSet
+    Dim myDA As New SqlDataAdapter
 
     Private Sub btnChoice1_Click(sender As Object, e As EventArgs) Handles btnChoice1.Click
         dgvData.DataSource = sendselect("SELECT * FROM dbo.Products WHERE ProductName LIKE 'N%'")
     End Sub
     Function sendselect(Wow As String) As DataTable
         myConn.Open()
-        Dim myDA As New SqlDataAdapter
-        Dim myDS As New DataSet
+        myDS.Tables.Clear()
         myDA = New SqlDataAdapter(Wow, myConn)
         myDA.Fill(myDS, "wow")
         myConn.Close()
