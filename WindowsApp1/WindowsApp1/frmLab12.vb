@@ -7,8 +7,8 @@ Public Class frmLab12
     Dim myDR As SqlDataReader
     Dim myDA As New SqlDataAdapter
     Dim myDS As New DataSet
-    Dim Wow As String
-    Dim cs As String
+    Dim Wow As String 'เก็บ String ของ คำสั่ง SQL
+    Dim cs As String 'เก็บ String เพื่อนำไปเช็ค ตอนกดปุุ่ม Save
     Private Sub connectDB()
         If myConn.State = ConnectionState.Open Then
             myConn.Close()
@@ -187,7 +187,6 @@ Public Class frmLab12
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        cs = "delete"
         connectDB()
 
         If MessageBox.Show("คุณต้องการลบ พนักงาน ไอดีที่" & DgvEmp.Rows(DgvEmp.CurrentCell.RowIndex).Cells(0).Value & "ใช่หรือไม่", "ลบพนักงาร", MessageBoxButtons.YesNo) = DialogResult.Yes Then
