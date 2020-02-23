@@ -22,11 +22,11 @@ Public Class frmLab11
     End Sub
 
     Private Sub btnChoice2_Click(sender As Object, e As EventArgs) Handles btnChoice2.Click
-        dgvData.DataSource = sendselect("SELECT (UnitPrice) FROM dbo.Products WHERE ProductID = 64")
+        dgvData.DataSource = sendselect("select ProductID, ProductName, UnitPrice, UnitsInStock, UnitsInStock * UnitPrice total from Products where ProductID ='64'")
     End Sub
 
     Private Sub btnChoice3_Click(sender As Object, e As EventArgs) Handles btnChoice3.Click
-        dgvData.DataSource = sendselect("SELECT * FROM dbo.Customers WHERE Country = 'Brazil'")
+        dgvData.DataSource = sendselect("Select count(*) จำนวน from Customers where Country='Brazil'")
     End Sub
 
     Private Sub btnChoice4_Click(sender As Object, e As EventArgs) Handles btnChoice4.Click
@@ -44,7 +44,7 @@ Public Class frmLab11
     End Sub
 
     Private Sub btnChoice7_Click(sender As Object, e As EventArgs) Handles btnChoice7.Click
-        dgvData.DataSource = sendselect("SELECT * FROM dbo.Orders WHERE OrderID = 10255")
+        dgvData.DataSource = sendselect("select orderid, sum(unitprice*quantity) totall from [order details] group by orderid having orderid ='10255'")
     End Sub
 
     Private Sub btnChoice8_Click(sender As Object, e As EventArgs) Handles btnChoice8.Click
@@ -53,11 +53,11 @@ Public Class frmLab11
     End Sub
 
     Private Sub btnChoice9_Click(sender As Object, e As EventArgs) Handles btnChoice9.Click
-        dgvData.DataSource = sendselect("SELECT * FROM dbo.Orders WHERE ShipName = 'Exotic Liquids'")
+        dgvData.DataSource = sendselect("Select *, suppliers.companyname from products inner join suppliers on products.supplierID = Suppliers.supplierid where suppliers.companyname = 'exotic liquids'")
     End Sub
 
     Private Sub btnChoice10_Click(sender As Object, e As EventArgs) Handles btnChoice10.Click
-        dgvData.DataSource = sendselect("SELECT * FROM dbo.Orders WHERE ShipCountry = 'ITALY'")
+        dgvData.DataSource = sendselect("Select count(*) from orders inner join customers on orders.customerid = customers.customerid group by customers.country having customers.country='ITALY'")
 
     End Sub
 End Class
