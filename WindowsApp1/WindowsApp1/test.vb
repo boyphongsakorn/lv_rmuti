@@ -32,4 +32,8 @@ Public Class test
         myDa.Fill(myDs, "tbcat")
         dgvnorth.DataSource = myDs.Tables("tbcat")
     End Sub
+
+    Private Sub test_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'dbCompany_xxxDataSet.tbEmployee' table. You can move, or remove it, as needed.
+    End Sub
 End Class

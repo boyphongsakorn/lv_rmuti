@@ -51,7 +51,7 @@ Partial Class frmLab11
         'btnChoice1
         '
         Me.btnChoice1.Location = New System.Drawing.Point(16, 34)
-        Me.btnChoice1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice1.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice1.Name = "btnChoice1"
         Me.btnChoice1.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice1.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class frmLab11
         'btnChoice2
         '
         Me.btnChoice2.Location = New System.Drawing.Point(124, 34)
-        Me.btnChoice2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice2.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice2.Name = "btnChoice2"
         Me.btnChoice2.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice2.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class frmLab11
         'btnChoice3
         '
         Me.btnChoice3.Location = New System.Drawing.Point(232, 34)
-        Me.btnChoice3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice3.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice3.Name = "btnChoice3"
         Me.btnChoice3.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice3.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class frmLab11
         'btnChoice4
         '
         Me.btnChoice4.Location = New System.Drawing.Point(340, 34)
-        Me.btnChoice4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice4.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice4.Name = "btnChoice4"
         Me.btnChoice4.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice4.TabIndex = 4
@@ -91,7 +91,7 @@ Partial Class frmLab11
         'btnChoice5
         '
         Me.btnChoice5.Location = New System.Drawing.Point(448, 36)
-        Me.btnChoice5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice5.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice5.Name = "btnChoice5"
         Me.btnChoice5.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice5.TabIndex = 5
@@ -101,7 +101,7 @@ Partial Class frmLab11
         'btnChoice6
         '
         Me.btnChoice6.Location = New System.Drawing.Point(559, 36)
-        Me.btnChoice6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice6.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice6.Name = "btnChoice6"
         Me.btnChoice6.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice6.TabIndex = 6
@@ -111,7 +111,7 @@ Partial Class frmLab11
         'btnChoice7
         '
         Me.btnChoice7.Location = New System.Drawing.Point(667, 36)
-        Me.btnChoice7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice7.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice7.Name = "btnChoice7"
         Me.btnChoice7.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice7.TabIndex = 7
@@ -121,7 +121,7 @@ Partial Class frmLab11
         'btnChoice8
         '
         Me.btnChoice8.Location = New System.Drawing.Point(775, 34)
-        Me.btnChoice8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice8.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice8.Name = "btnChoice8"
         Me.btnChoice8.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice8.TabIndex = 8
@@ -131,7 +131,7 @@ Partial Class frmLab11
         'btnChoice9
         '
         Me.btnChoice9.Location = New System.Drawing.Point(883, 36)
-        Me.btnChoice9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice9.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice9.Name = "btnChoice9"
         Me.btnChoice9.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice9.TabIndex = 9
@@ -141,7 +141,7 @@ Partial Class frmLab11
         'btnChoice10
         '
         Me.btnChoice10.Location = New System.Drawing.Point(991, 36)
-        Me.btnChoice10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnChoice10.Margin = New System.Windows.Forms.Padding(4)
         Me.btnChoice10.Name = "btnChoice10"
         Me.btnChoice10.Size = New System.Drawing.Size(100, 28)
         Me.btnChoice10.TabIndex = 10
@@ -152,9 +152,10 @@ Partial Class frmLab11
         '
         Me.dgvData.AllowUserToAddRows = False
         Me.dgvData.AllowUserToDeleteRows = False
+        Me.dgvData.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvData.Location = New System.Drawing.Point(16, 70)
-        Me.dgvData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dgvData.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvData.Name = "dgvData"
         Me.dgvData.ReadOnly = True
         Me.dgvData.RowHeadersWidth = 51
@@ -164,7 +165,7 @@ Partial Class frmLab11
         'btnClose
         '
         Me.btnClose.Location = New System.Drawing.Point(447, 500)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(100, 28)
         Me.btnClose.TabIndex = 12
@@ -175,6 +176,7 @@ Partial Class frmLab11
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1104, 536)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.dgvData)
@@ -189,7 +191,7 @@ Partial Class frmLab11
         Me.Controls.Add(Me.btnChoice2)
         Me.Controls.Add(Me.btnChoice1)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmLab11"
         Me.Text = "frmLab11"
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).EndInit()

@@ -48,11 +48,30 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -74,11 +93,25 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dbCompany_xxxDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbCompany_xxxDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbCompany_xxxDataSet.vb">
+      <DependentUpon>dbCompany_xxxDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmLab1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLab1.Designer.vb">
       <DependentUpon>frmLab1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLab10.Designer.vb">
+      <DependentUpon>FrmLab10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLab10.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLab11.Designer.Vb">
@@ -91,6 +124,12 @@
       <DependentUpon>frmLab12.vb</DependentUpon>
     </Compile>
     <Compile Include="frmLab12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLab13.Designer.vb">
+      <DependentUpon>frmLab13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab13.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLab2.Designer.Vb">
@@ -180,6 +219,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="rptLab15.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptLab15.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="test.Designer.vb">
       <DependentUpon>test.vb</DependentUpon>
     </Compile>
@@ -191,11 +236,17 @@
     <EmbeddedResource Include="frmLab1.resx">
       <DependentUpon>frmLab1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLab10.resx">
+      <DependentUpon>FrmLab10.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLab11.resx">
       <DependentUpon>frmLab11.Vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLab12.resx">
       <DependentUpon>frmLab12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLab13.resx">
+      <DependentUpon>frmLab13.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLab2.resx">
       <DependentUpon>frmLab2.Vb</DependentUpon>
@@ -239,11 +290,26 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptLab15.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptLab15.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="test.resx">
       <DependentUpon>test.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="dbCompany_xxxDataSet.xsc">
+      <DependentUpon>dbCompany_xxxDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbCompany_xxxDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbCompany_xxxDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbCompany_xxxDataSet.xss">
+      <DependentUpon>dbCompany_xxxDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -254,6 +320,26 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

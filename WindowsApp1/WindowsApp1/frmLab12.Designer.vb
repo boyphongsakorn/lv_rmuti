@@ -54,148 +54,147 @@ Partial Class frmLab12
         Me.DgvEmp.AllowUserToAddRows = False
         Me.DgvEmp.AllowUserToDeleteRows = False
         Me.DgvEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DgvEmp.Location = New System.Drawing.Point(11, 11)
-        Me.DgvEmp.Margin = New System.Windows.Forms.Padding(2)
+        Me.DgvEmp.Location = New System.Drawing.Point(15, 14)
+        Me.DgvEmp.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DgvEmp.Name = "DgvEmp"
         Me.DgvEmp.ReadOnly = True
         Me.DgvEmp.RowHeadersWidth = 51
         Me.DgvEmp.RowTemplate.Height = 24
-        Me.DgvEmp.Size = New System.Drawing.Size(582, 187)
+        Me.DgvEmp.Size = New System.Drawing.Size(776, 230)
         Me.DgvEmp.TabIndex = 0
         '
         'btnInsert
         '
-        Me.btnInsert.Location = New System.Drawing.Point(87, 333)
+        Me.btnInsert.Location = New System.Drawing.Point(116, 410)
+        Me.btnInsert.Margin = New System.Windows.Forms.Padding(4)
         Me.btnInsert.Name = "btnInsert"
-        Me.btnInsert.Size = New System.Drawing.Size(75, 23)
+        Me.btnInsert.Size = New System.Drawing.Size(100, 28)
         Me.btnInsert.TabIndex = 2
         Me.btnInsert.Text = "เพิ่ม"
         Me.btnInsert.UseVisualStyleBackColor = True
         '
         'btnEdit
         '
-        Me.btnEdit.Location = New System.Drawing.Point(168, 333)
+        Me.btnEdit.Location = New System.Drawing.Point(224, 410)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEdit.Name = "btnEdit"
-        Me.btnEdit.Size = New System.Drawing.Size(75, 23)
+        Me.btnEdit.Size = New System.Drawing.Size(100, 28)
         Me.btnEdit.TabIndex = 3
         Me.btnEdit.Text = "แก้ไข"
         Me.btnEdit.UseVisualStyleBackColor = True
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(249, 333)
+        Me.btnDelete.Location = New System.Drawing.Point(332, 410)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.Size = New System.Drawing.Size(100, 28)
         Me.btnDelete.TabIndex = 4
         Me.btnDelete.Text = "ลบ"
         Me.btnDelete.UseVisualStyleBackColor = True
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(330, 333)
+        Me.btnClose.Location = New System.Drawing.Point(440, 410)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
+        Me.btnClose.Size = New System.Drawing.Size(100, 28)
         Me.btnClose.TabIndex = 5
         Me.btnClose.Text = "ออก"
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'txtEmpLname
         '
-        Me.txtEmpLname.Location = New System.Drawing.Point(439, 10)
-        Me.txtEmpLname.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEmpLname.Location = New System.Drawing.Point(585, 12)
+        Me.txtEmpLname.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtEmpLname.Name = "txtEmpLname"
-        Me.txtEmpLname.Size = New System.Drawing.Size(76, 20)
+        Me.txtEmpLname.Size = New System.Drawing.Size(100, 22)
         Me.txtEmpLname.TabIndex = 2
         '
         'txtEmpId
         '
-        Me.txtEmpId.Location = New System.Drawing.Point(81, 10)
-        Me.txtEmpId.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEmpId.Location = New System.Drawing.Point(108, 12)
+        Me.txtEmpId.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtEmpId.Name = "txtEmpId"
-        Me.txtEmpId.Size = New System.Drawing.Size(76, 20)
+        Me.txtEmpId.Size = New System.Drawing.Size(100, 22)
         Me.txtEmpId.TabIndex = 6
         '
         'txtEmpName
         '
-        Me.txtEmpName.Location = New System.Drawing.Point(247, 10)
-        Me.txtEmpName.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtEmpName.Location = New System.Drawing.Point(329, 12)
+        Me.txtEmpName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtEmpName.Name = "txtEmpName"
-        Me.txtEmpName.Size = New System.Drawing.Size(76, 20)
+        Me.txtEmpName.Size = New System.Drawing.Size(100, 22)
         Me.txtEmpName.TabIndex = 5
         '
         'txtAddress
         '
-        Me.txtAddress.Location = New System.Drawing.Point(81, 47)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtAddress.Location = New System.Drawing.Point(108, 58)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(241, 20)
+        Me.txtAddress.Size = New System.Drawing.Size(320, 22)
         Me.txtAddress.TabIndex = 4
         '
         'txtSalary
         '
-        Me.txtSalary.Location = New System.Drawing.Point(81, 80)
-        Me.txtSalary.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtSalary.Location = New System.Drawing.Point(108, 98)
+        Me.txtSalary.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtSalary.Name = "txtSalary"
-        Me.txtSalary.Size = New System.Drawing.Size(76, 20)
+        Me.txtSalary.Size = New System.Drawing.Size(100, 22)
         Me.txtSalary.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(10, 13)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(13, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 13)
+        Me.Label1.Size = New System.Drawing.Size(78, 17)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "รหัสพนักงาน"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(181, 14)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(241, 17)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 13)
+        Me.Label2.Size = New System.Drawing.Size(70, 17)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "ชื่อพนักงาน"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(363, 13)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(484, 16)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(46, 13)
+        Me.Label3.Size = New System.Drawing.Size(53, 17)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "นามสกุล"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(10, 47)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(13, 58)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(27, 13)
+        Me.Label4.Size = New System.Drawing.Size(30, 17)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "ที่อยู่"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(363, 51)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(484, 63)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(28, 13)
+        Me.Label5.Size = New System.Drawing.Size(29, 17)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "เพศ"
         '
         'radMale
         '
         Me.radMale.AutoSize = True
-        Me.radMale.Location = New System.Drawing.Point(393, 49)
-        Me.radMale.Margin = New System.Windows.Forms.Padding(2)
+        Me.radMale.Location = New System.Drawing.Point(524, 60)
+        Me.radMale.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radMale.Name = "radMale"
-        Me.radMale.Size = New System.Drawing.Size(44, 17)
+        Me.radMale.Size = New System.Drawing.Size(50, 21)
         Me.radMale.TabIndex = 11
         Me.radMale.TabStop = True
         Me.radMale.Text = "ชาย"
@@ -204,10 +203,10 @@ Partial Class frmLab12
         'radFemale
         '
         Me.radFemale.AutoSize = True
-        Me.radFemale.Location = New System.Drawing.Point(483, 51)
-        Me.radFemale.Margin = New System.Windows.Forms.Padding(2)
+        Me.radFemale.Location = New System.Drawing.Point(644, 63)
+        Me.radFemale.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.radFemale.Name = "radFemale"
-        Me.radFemale.Size = New System.Drawing.Size(46, 17)
+        Me.radFemale.Size = New System.Drawing.Size(54, 21)
         Me.radFemale.TabIndex = 12
         Me.radFemale.TabStop = True
         Me.radFemale.Text = "หญิง"
@@ -216,37 +215,37 @@ Partial Class frmLab12
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(10, 84)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(13, 103)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(51, 13)
+        Me.Label6.Size = New System.Drawing.Size(55, 17)
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "เงินเดือน"
         '
         'cboDepart
         '
         Me.cboDepart.FormattingEnabled = True
-        Me.cboDepart.Location = New System.Drawing.Point(223, 81)
+        Me.cboDepart.Location = New System.Drawing.Point(297, 100)
+        Me.cboDepart.Margin = New System.Windows.Forms.Padding(4)
         Me.cboDepart.Name = "cboDepart"
-        Me.cboDepart.Size = New System.Drawing.Size(121, 21)
+        Me.cboDepart.Size = New System.Drawing.Size(160, 24)
         Me.cboDepart.TabIndex = 14
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(181, 86)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(241, 106)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(37, 13)
+        Me.Label7.Size = New System.Drawing.Size(41, 17)
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "แผนก"
         '
         'btnSave
         '
         Me.btnSave.Enabled = False
-        Me.btnSave.Location = New System.Drawing.Point(428, 79)
+        Me.btnSave.Location = New System.Drawing.Point(571, 97)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(75, 23)
+        Me.btnSave.Size = New System.Drawing.Size(100, 28)
         Me.btnSave.TabIndex = 16
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
@@ -254,15 +253,17 @@ Partial Class frmLab12
         'btnCancel
         '
         Me.btnCancel.Enabled = False
-        Me.btnCancel.Location = New System.Drawing.Point(510, 79)
+        Me.btnCancel.Location = New System.Drawing.Point(680, 97)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(56, 23)
+        Me.btnCancel.Size = New System.Drawing.Size(75, 28)
         Me.btnCancel.TabIndex = 17
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
         'panEmp
         '
+        Me.panEmp.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.panEmp.Controls.Add(Me.cboDepart)
         Me.panEmp.Controls.Add(Me.btnCancel)
         Me.panEmp.Controls.Add(Me.txtSalary)
@@ -281,23 +282,25 @@ Partial Class frmLab12
         Me.panEmp.Controls.Add(Me.Label5)
         Me.panEmp.Controls.Add(Me.radMale)
         Me.panEmp.Enabled = False
-        Me.panEmp.Location = New System.Drawing.Point(9, 210)
+        Me.panEmp.Location = New System.Drawing.Point(12, 258)
+        Me.panEmp.Margin = New System.Windows.Forms.Padding(4)
         Me.panEmp.Name = "panEmp"
-        Me.panEmp.Size = New System.Drawing.Size(582, 117)
+        Me.panEmp.Size = New System.Drawing.Size(776, 144)
         Me.panEmp.TabIndex = 18
         '
         'frmLab12
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(600, 366)
+        Me.BackColor = System.Drawing.Color.Aqua
+        Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.panEmp)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnInsert)
         Me.Controls.Add(Me.DgvEmp)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frmLab12"
         Me.Text = "frmLab12"
         CType(Me.DgvEmp, System.ComponentModel.ISupportInitialize).EndInit()

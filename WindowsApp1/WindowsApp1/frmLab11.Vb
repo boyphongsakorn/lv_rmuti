@@ -52,9 +52,21 @@ Public Class frmLab11
         dgvData.DataSource = sendselect("SELECT * FROM dbo.Customers LEFT JOIN dbo.Orders ON dbo.Orders.CustomerID = dbo.Customers.CustomerID WHERE OrderID = 10347")
         'dgvData.DataSource = sendselect("SELECT * FROM dbo.Orders WHERE OrderID = 10347")
     End Sub
-
     Private Sub btnChoice9_Click(sender As Object, e As EventArgs) Handles btnChoice9.Click
-        dgvData.DataSource = sendselect("Select *, suppliers.companyname from products inner join suppliers on products.supplierID = Suppliers.supplierid where suppliers.companyname = 'exotic liquids'")
+
+        dgvData.DataSource = sendselect("SELECT [Order Details].OrderID, [Order Details].ProductID, Products.ProductName, [Order Details].UnitPrice,[Order Details].Quantity, Suppliers.SupplierID, Suppliers.CompanyName From Suppliers,[Order Details], Products Where Suppliers.SupplierID = Products.SupplierID And [Order Details].ProductID=Products.ProductID And CompanyName='Exotic Liquids' ")
+
+        'connectDB()
+        'myDS = New DataSet
+        'strSql = (" SELECT [Order Details].OrderID, [Order Details].ProductID, Products.ProductName, [Order Details].UnitPrice, 
+        '                        [Order Details].Quantity, Suppliers.SupplierID, Suppliers.CompanyName 
+        'From Suppliers,[Order Details],Products 
+        'WHERE Suppliers.SupplierID=Products.SupplierID AND [Order Details].ProductID=Products.ProductID AND CompanyName='Exotic Liquids' ")
+        'myDA = New SqlDataAdapter(strSql, myConn)
+        'myDA.Fill(myDS, "9Data")
+        'dgvData.DataSource = myDS.Tables("9Data")
+
+
     End Sub
 
     Private Sub btnChoice10_Click(sender As Object, e As EventArgs) Handles btnChoice10.Click

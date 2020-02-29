@@ -201,4 +201,16 @@ Public Class frmLab12
             End If
         End If
     End Sub
+
+    Private Sub DgvEmp_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DgvEmp.CellContentClick
+
+    End Sub
+
+    Private Sub txtEmpId_TextChanged(sender As Object, e As EventArgs) Handles txtEmpId.TextChanged
+
+    End Sub
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+    End Sub
 End Class
