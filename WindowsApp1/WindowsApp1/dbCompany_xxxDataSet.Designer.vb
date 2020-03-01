@@ -609,17 +609,21 @@ Partial Public Class dbCompany_xxxDataSet
         
         Private columnPostalCode As Global.System.Data.DataColumn
         
-        Private columnCustomerID As Global.System.Data.DataColumn
-        
         Private columnOrderDate As Global.System.Data.DataColumn
         
         Private columnFirstName As Global.System.Data.DataColumn
         
         Private columnLastName As Global.System.Data.DataColumn
         
+        Private columnName_company As Global.System.Data.DataColumn
+        
+        Private columnAddress_company As Global.System.Data.DataColumn
+        
         Private columnContactName As Global.System.Data.DataColumn
         
         Private columnRequiredDate As Global.System.Data.DataColumn
+        
+        Private columnCompanyName As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
@@ -754,14 +758,6 @@ Partial Public Class dbCompany_xxxDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property CustomerIDColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCustomerID
-            End Get
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public ReadOnly Property OrderDateColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnOrderDate
@@ -786,6 +782,22 @@ Partial Public Class dbCompany_xxxDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Name_companyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnName_company
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Address_companyColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnAddress_company
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public ReadOnly Property ContactNameColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnContactName
@@ -797,6 +809,14 @@ Partial Public Class dbCompany_xxxDataSet
         Public ReadOnly Property RequiredDateColumn() As Global.System.Data.DataColumn
             Get
                 Return Me.columnRequiredDate
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property CompanyNameColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCompanyName
             End Get
         End Property
         
@@ -849,14 +869,16 @@ Partial Public Class dbCompany_xxxDataSet
                     ByVal City As String,  _
                     ByVal Country As String,  _
                     ByVal PostalCode As String,  _
-                    ByVal CustomerID As String,  _
                     ByVal OrderDate As Date,  _
                     ByVal FirstName As String,  _
                     ByVal LastName As String,  _
+                    ByVal Name_company As String,  _
+                    ByVal Address_company As String,  _
                     ByVal ContactName As String,  _
-                    ByVal RequiredDate As Date) As tbfiretableRow
+                    ByVal RequiredDate As Date,  _
+                    ByVal CompanyName As String) As tbfiretableRow
             Dim rowtbfiretableRow As tbfiretableRow = CType(Me.NewRow,tbfiretableRow)
-            Dim columnValuesArray() As Object = New Object() {ProductID, UnitPrice, Quantity, ProductName, QuantityPerUnit, Nothing, OD_ID, Discount, Address, City, Country, PostalCode, CustomerID, OrderDate, FirstName, LastName, ContactName, RequiredDate}
+            Dim columnValuesArray() As Object = New Object() {ProductID, UnitPrice, Quantity, ProductName, QuantityPerUnit, Nothing, OD_ID, Discount, Address, City, Country, PostalCode, OrderDate, FirstName, LastName, Name_company, Address_company, ContactName, RequiredDate, CompanyName}
             rowtbfiretableRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowtbfiretableRow)
             Return rowtbfiretableRow
@@ -891,12 +913,14 @@ Partial Public Class dbCompany_xxxDataSet
             Me.columnCity = MyBase.Columns("City")
             Me.columnCountry = MyBase.Columns("Country")
             Me.columnPostalCode = MyBase.Columns("PostalCode")
-            Me.columnCustomerID = MyBase.Columns("CustomerID")
             Me.columnOrderDate = MyBase.Columns("OrderDate")
             Me.columnFirstName = MyBase.Columns("FirstName")
             Me.columnLastName = MyBase.Columns("LastName")
+            Me.columnName_company = MyBase.Columns("Name_company")
+            Me.columnAddress_company = MyBase.Columns("Address_company")
             Me.columnContactName = MyBase.Columns("ContactName")
             Me.columnRequiredDate = MyBase.Columns("RequiredDate")
+            Me.columnCompanyName = MyBase.Columns("CompanyName")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -926,18 +950,22 @@ Partial Public Class dbCompany_xxxDataSet
             MyBase.Columns.Add(Me.columnCountry)
             Me.columnPostalCode = New Global.System.Data.DataColumn("PostalCode", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnPostalCode)
-            Me.columnCustomerID = New Global.System.Data.DataColumn("CustomerID", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCustomerID)
             Me.columnOrderDate = New Global.System.Data.DataColumn("OrderDate", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnOrderDate)
             Me.columnFirstName = New Global.System.Data.DataColumn("FirstName", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnFirstName)
             Me.columnLastName = New Global.System.Data.DataColumn("LastName", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnLastName)
+            Me.columnName_company = New Global.System.Data.DataColumn("Name_company", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnName_company)
+            Me.columnAddress_company = New Global.System.Data.DataColumn("Address_company", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnAddress_company)
             Me.columnContactName = New Global.System.Data.DataColumn("ContactName", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnContactName)
             Me.columnRequiredDate = New Global.System.Data.DataColumn("RequiredDate", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnRequiredDate)
+            Me.columnCompanyName = New Global.System.Data.DataColumn("CompanyName", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCompanyName)
             Me.columnProductID.AllowDBNull = false
             Me.columnQuantity.AllowDBNull = false
             Me.columnProductName.AllowDBNull = false
@@ -954,13 +982,15 @@ Partial Public Class dbCompany_xxxDataSet
             Me.columnCity.MaxLength = 15
             Me.columnCountry.MaxLength = 15
             Me.columnPostalCode.MaxLength = 10
-            Me.columnCustomerID.AllowDBNull = false
-            Me.columnCustomerID.MaxLength = 5
             Me.columnFirstName.AllowDBNull = false
             Me.columnFirstName.MaxLength = 10
             Me.columnLastName.AllowDBNull = false
             Me.columnLastName.MaxLength = 20
+            Me.columnName_company.MaxLength = 50
+            Me.columnAddress_company.MaxLength = 50
             Me.columnContactName.MaxLength = 30
+            Me.columnCompanyName.AllowDBNull = false
+            Me.columnCompanyName.MaxLength = 40
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1333,17 +1363,6 @@ Partial Public Class dbCompany_xxxDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Property CustomerID() As String
-            Get
-                Return CType(Me(Me.tabletbfiretable.CustomerIDColumn),String)
-            End Get
-            Set
-                Me(Me.tabletbfiretable.CustomerIDColumn) = value
-            End Set
-        End Property
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Property OrderDate() As Date
             Get
                 Try 
@@ -1381,6 +1400,36 @@ Partial Public Class dbCompany_xxxDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Name_company() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbfiretable.Name_companyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Name_company' in table 'tbfiretable' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbfiretable.Name_companyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Address_company() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tabletbfiretable.Address_companyColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Address_company' in table 'tbfiretable' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tabletbfiretable.Address_companyColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Property ContactName() As String
             Get
                 Try 
@@ -1406,6 +1455,17 @@ Partial Public Class dbCompany_xxxDataSet
             End Get
             Set
                 Me(Me.tabletbfiretable.RequiredDateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property CompanyName() As String
+            Get
+                Return CType(Me(Me.tabletbfiretable.CompanyNameColumn),String)
+            End Get
+            Set
+                Me(Me.tabletbfiretable.CompanyNameColumn) = value
             End Set
         End Property
         
@@ -1491,6 +1551,30 @@ Partial Public Class dbCompany_xxxDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub SetOrderDateNull()
             Me(Me.tabletbfiretable.OrderDateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsName_companyNull() As Boolean
+            Return Me.IsNull(Me.tabletbfiretable.Name_companyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetName_companyNull()
+            Me(Me.tabletbfiretable.Name_companyColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsAddress_companyNull() As Boolean
+            Return Me.IsNull(Me.tabletbfiretable.Address_companyColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetAddress_companyNull()
+            Me(Me.tabletbfiretable.Address_companyColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1906,12 +1990,14 @@ Namespace dbCompany_xxxDataSetTableAdapters
             tableMapping.ColumnMappings.Add("City", "City")
             tableMapping.ColumnMappings.Add("Country", "Country")
             tableMapping.ColumnMappings.Add("PostalCode", "PostalCode")
-            tableMapping.ColumnMappings.Add("CustomerID", "CustomerID")
             tableMapping.ColumnMappings.Add("OrderDate", "OrderDate")
             tableMapping.ColumnMappings.Add("FirstName", "FirstName")
             tableMapping.ColumnMappings.Add("LastName", "LastName")
+            tableMapping.ColumnMappings.Add("Name_company", "Name_company")
+            tableMapping.ColumnMappings.Add("Address_company", "Address_company")
             tableMapping.ColumnMappings.Add("ContactName", "ContactName")
             tableMapping.ColumnMappings.Add("RequiredDate", "RequiredDate")
+            tableMapping.ColumnMappings.Add("CompanyName", "CompanyName")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
         
@@ -1931,15 +2017,15 @@ Namespace dbCompany_xxxDataSetTableAdapters
             Me._commandCollection(0).CommandText = "SELECT        [Order Details].ProductID, Products.ProductName, Products.QuantityP"& _ 
                 "erUnit, Products.UnitPrice, [Order Details].Quantity, Orders.OrderID, [Order Det"& _ 
                 "ails].OrderID AS OD_ID, [Order Details].Discount, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Cus"& _ 
-                "tomers.Address, Customers.City, Customers.Country, Customers.PostalCode, Custome"& _ 
-                "rs.CustomerID, Orders.OrderDate, Employees.FirstName, Employees.LastName, Custom"& _ 
-                "ers.ContactName, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Orders.RequiredDate"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM           "& _ 
-                " Orders INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Employees ON Orders.EmployeeID = Em"& _ 
-                "ployees.EmployeeID INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Customers ON Orders.Cust"& _ 
-                "omerID = Customers.CustomerID INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         [Order Detail"& _ 
-                "s] ON Orders.OrderID = [Order Details].OrderID INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                     "& _ 
-                "    Products ON [Order Details].ProductID = Products.ProductID CROSS JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"     "& _ 
-                "                    Company"
+                "tomers.Address, Customers.City, Customers.Country, Customers.PostalCode, Orders."& _ 
+                "OrderDate, Employees.FirstName, Employees.LastName, Company.Name_company, Compan"& _ 
+                "y.Address_company,"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                          Customers.ContactName, Orders.Requ"& _ 
+                "iredDate, Customers.CompanyName"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Orders INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"            "& _ 
+                "             Employees ON Orders.EmployeeID = Employees.EmployeeID INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&" "& _ 
+                "                        Customers ON Orders.CustomerID = Customers.CustomerID IN"& _ 
+                "NER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         [Order Details] ON Orders.OrderID = [Order De"& _ 
+                "tails].OrderID INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Products ON [Order Details]."& _ 
+                "ProductID = Products.ProductID CROSS JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         Company"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
