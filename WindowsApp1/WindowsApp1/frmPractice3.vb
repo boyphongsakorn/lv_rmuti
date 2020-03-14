@@ -57,7 +57,7 @@
     End Sub
 
     Private Sub frmPractice3_ClientSizeChanged(sender As Object, e As EventArgs) Handles Me.ClientSizeChanged
-        Label1.Location = New Point((Me.Size.Width / 2) - 188.5, (Me.Size.Height / 2) - 55)
+        Label1.Location = New Point((Me.Size.Width / 2) - 550, (Me.Size.Height / 2) - 175)
 
     End Sub
 

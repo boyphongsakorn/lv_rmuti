@@ -55,7 +55,7 @@ Partial Class FrmLab10
         Me.lstSaleInfo.ItemHeight = 16
         Me.lstSaleInfo.Items.AddRange(New Object() {",0,0,0", ",0,0,0", ",0,0,0", ",0,0,0", ",0,0,0"})
         Me.lstSaleInfo.Location = New System.Drawing.Point(43, 82)
-        Me.lstSaleInfo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.lstSaleInfo.Margin = New System.Windows.Forms.Padding(4)
         Me.lstSaleInfo.Name = "lstSaleInfo"
         Me.lstSaleInfo.Size = New System.Drawing.Size(159, 116)
         Me.lstSaleInfo.TabIndex = 0
@@ -126,7 +126,7 @@ Partial Class FrmLab10
         Me.cboIndex.FormattingEnabled = True
         Me.cboIndex.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6"})
         Me.cboIndex.Location = New System.Drawing.Point(43, 278)
-        Me.cboIndex.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cboIndex.Margin = New System.Windows.Forms.Padding(4)
         Me.cboIndex.Name = "cboIndex"
         Me.cboIndex.Size = New System.Drawing.Size(160, 24)
         Me.cboIndex.TabIndex = 6
@@ -135,7 +135,7 @@ Partial Class FrmLab10
         '
         Me.txtEmpName.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtEmpName.Location = New System.Drawing.Point(43, 414)
-        Me.txtEmpName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEmpName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmpName.Name = "txtEmpName"
         Me.txtEmpName.Size = New System.Drawing.Size(132, 22)
         Me.txtEmpName.TabIndex = 7
@@ -144,7 +144,7 @@ Partial Class FrmLab10
         '
         Me.txtSaleC.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtSaleC.Location = New System.Drawing.Point(388, 414)
-        Me.txtSaleC.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSaleC.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSaleC.Name = "txtSaleC"
         Me.txtSaleC.Size = New System.Drawing.Size(75, 22)
         Me.txtSaleC.TabIndex = 8
@@ -153,7 +153,7 @@ Partial Class FrmLab10
         '
         Me.txtSaleB.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtSaleB.Location = New System.Drawing.Point(292, 414)
-        Me.txtSaleB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSaleB.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSaleB.Name = "txtSaleB"
         Me.txtSaleB.Size = New System.Drawing.Size(80, 22)
         Me.txtSaleB.TabIndex = 9
@@ -162,7 +162,7 @@ Partial Class FrmLab10
         '
         Me.txtSaleA.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtSaleA.Location = New System.Drawing.Point(203, 414)
-        Me.txtSaleA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSaleA.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSaleA.Name = "txtSaleA"
         Me.txtSaleA.Size = New System.Drawing.Size(63, 22)
         Me.txtSaleA.TabIndex = 10
@@ -171,7 +171,7 @@ Partial Class FrmLab10
         '
         Me.btnAdd.BackColor = System.Drawing.Color.Red
         Me.btnAdd.Location = New System.Drawing.Point(340, 469)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(100, 28)
         Me.btnAdd.TabIndex = 11
@@ -304,7 +304,7 @@ Partial Class FrmLab10
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
+        Me.ClientSize = New System.Drawing.Size(503, 554)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
@@ -329,7 +329,7 @@ Partial Class FrmLab10
         Me.Controls.Add(Me.lblSumSaleB)
         Me.Controls.Add(Me.lblSumSaleA)
         Me.Controls.Add(Me.lstSaleInfo)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmLab10"
         Me.Text = "FrmLab10"
         Me.ResumeLayout(False)

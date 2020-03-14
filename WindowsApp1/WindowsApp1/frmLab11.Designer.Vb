@@ -41,109 +41,98 @@ Partial Class frmLab11
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(477, 16)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(321, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
+        Me.Label1.Size = New System.Drawing.Size(173, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "ตารางแสดงข้อมูลจากระบบฐานข้อมูล"
         '
         'btnChoice1
         '
-        Me.btnChoice1.Location = New System.Drawing.Point(16, 34)
-        Me.btnChoice1.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice1.Location = New System.Drawing.Point(12, 28)
         Me.btnChoice1.Name = "btnChoice1"
-        Me.btnChoice1.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice1.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice1.TabIndex = 1
         Me.btnChoice1.Text = "ข้อที่ 1"
         Me.btnChoice1.UseVisualStyleBackColor = True
         '
         'btnChoice2
         '
-        Me.btnChoice2.Location = New System.Drawing.Point(124, 34)
-        Me.btnChoice2.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice2.Location = New System.Drawing.Point(93, 28)
         Me.btnChoice2.Name = "btnChoice2"
-        Me.btnChoice2.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice2.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice2.TabIndex = 2
         Me.btnChoice2.Text = "ข้อที่ 2"
         Me.btnChoice2.UseVisualStyleBackColor = True
         '
         'btnChoice3
         '
-        Me.btnChoice3.Location = New System.Drawing.Point(232, 34)
-        Me.btnChoice3.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice3.Location = New System.Drawing.Point(174, 28)
         Me.btnChoice3.Name = "btnChoice3"
-        Me.btnChoice3.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice3.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice3.TabIndex = 3
         Me.btnChoice3.Text = "ข้อที่ 3"
         Me.btnChoice3.UseVisualStyleBackColor = True
         '
         'btnChoice4
         '
-        Me.btnChoice4.Location = New System.Drawing.Point(340, 34)
-        Me.btnChoice4.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice4.Location = New System.Drawing.Point(255, 28)
         Me.btnChoice4.Name = "btnChoice4"
-        Me.btnChoice4.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice4.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice4.TabIndex = 4
         Me.btnChoice4.Text = "ข้อที่ 4"
         Me.btnChoice4.UseVisualStyleBackColor = True
         '
         'btnChoice5
         '
-        Me.btnChoice5.Location = New System.Drawing.Point(448, 36)
-        Me.btnChoice5.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice5.Location = New System.Drawing.Point(336, 29)
         Me.btnChoice5.Name = "btnChoice5"
-        Me.btnChoice5.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice5.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice5.TabIndex = 5
         Me.btnChoice5.Text = "ข้อที่ 5"
         Me.btnChoice5.UseVisualStyleBackColor = True
         '
         'btnChoice6
         '
-        Me.btnChoice6.Location = New System.Drawing.Point(559, 36)
-        Me.btnChoice6.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice6.Location = New System.Drawing.Point(419, 29)
         Me.btnChoice6.Name = "btnChoice6"
-        Me.btnChoice6.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice6.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice6.TabIndex = 6
         Me.btnChoice6.Text = "ข้อที่ 6"
         Me.btnChoice6.UseVisualStyleBackColor = True
         '
         'btnChoice7
         '
-        Me.btnChoice7.Location = New System.Drawing.Point(667, 36)
-        Me.btnChoice7.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice7.Location = New System.Drawing.Point(500, 29)
         Me.btnChoice7.Name = "btnChoice7"
-        Me.btnChoice7.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice7.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice7.TabIndex = 7
         Me.btnChoice7.Text = "ข้อที่ 7"
         Me.btnChoice7.UseVisualStyleBackColor = True
         '
         'btnChoice8
         '
-        Me.btnChoice8.Location = New System.Drawing.Point(775, 34)
-        Me.btnChoice8.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice8.Location = New System.Drawing.Point(581, 28)
         Me.btnChoice8.Name = "btnChoice8"
-        Me.btnChoice8.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice8.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice8.TabIndex = 8
         Me.btnChoice8.Text = "ข้อที่ 8"
         Me.btnChoice8.UseVisualStyleBackColor = True
         '
         'btnChoice9
         '
-        Me.btnChoice9.Location = New System.Drawing.Point(883, 36)
-        Me.btnChoice9.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice9.Location = New System.Drawing.Point(662, 29)
         Me.btnChoice9.Name = "btnChoice9"
-        Me.btnChoice9.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice9.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice9.TabIndex = 9
         Me.btnChoice9.Text = "ข้อที่ 9"
         Me.btnChoice9.UseVisualStyleBackColor = True
         '
         'btnChoice10
         '
-        Me.btnChoice10.Location = New System.Drawing.Point(991, 36)
-        Me.btnChoice10.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnChoice10.Location = New System.Drawing.Point(743, 29)
         Me.btnChoice10.Name = "btnChoice10"
-        Me.btnChoice10.Size = New System.Drawing.Size(100, 28)
+        Me.btnChoice10.Size = New System.Drawing.Size(75, 23)
         Me.btnChoice10.TabIndex = 10
         Me.btnChoice10.Text = "ข้อที่ 10"
         Me.btnChoice10.UseVisualStyleBackColor = True
@@ -152,32 +141,30 @@ Partial Class frmLab11
         '
         Me.dgvData.AllowUserToAddRows = False
         Me.dgvData.AllowUserToDeleteRows = False
-        Me.dgvData.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.dgvData.BackgroundColor = System.Drawing.Color.White
         Me.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvData.Location = New System.Drawing.Point(16, 70)
-        Me.dgvData.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvData.Location = New System.Drawing.Point(12, 57)
         Me.dgvData.Name = "dgvData"
         Me.dgvData.ReadOnly = True
         Me.dgvData.RowHeadersWidth = 51
-        Me.dgvData.Size = New System.Drawing.Size(1075, 421)
+        Me.dgvData.Size = New System.Drawing.Size(806, 342)
         Me.dgvData.TabIndex = 11
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(447, 500)
-        Me.btnClose.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnClose.Location = New System.Drawing.Point(335, 406)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(100, 28)
+        Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 12
         Me.btnClose.Text = "ปิดโปรแกรม"
         Me.btnClose.UseVisualStyleBackColor = True
         '
         'frmLab11
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1104, 536)
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(828, 436)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.dgvData)
         Me.Controls.Add(Me.btnChoice10)
@@ -191,7 +178,6 @@ Partial Class frmLab11
         Me.Controls.Add(Me.btnChoice2)
         Me.Controls.Add(Me.btnChoice1)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frmLab11"
         Me.Text = "frmLab11"
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).EndInit()

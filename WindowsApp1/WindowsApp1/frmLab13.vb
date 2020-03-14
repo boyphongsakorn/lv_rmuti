@@ -26,19 +26,19 @@ Public Class frmLab13
 
         rpt.SetDataSource(ds.Tables("dtProduct"))
 
-        If RadioButton1.Checked = True Then
+        If radAll.Checked = True Then
             rpt.SetParameterValue("Condition", "")
-        ElseIf RadioButton2.Checked = True Then
+        ElseIf radOrderID.Checked = True Then
             rpt.SetParameterValue("Condition", "ใบเลขที่สั่ง :" & ds.Tables(0).Rows(0).Item(5).ToString)
         Else
             rpt.SetParameterValue("Condition", "ใบสั่งบริษัท :" & ds.Tables(0).Rows(0).Item(19).ToString)
         End If
-        CrystalReportViewer1.ReportSource = rpt
-        CrystalReportViewer1.Show()
+        crvData.ReportSource = rpt
+        crvData.Show()
 
         myConn.Close()
 
-        CrystalReportViewer1.Size = New Size(Me.Size.Width - 50, Me.Size.Height - 125)
+        crvData.Size = New Size(Me.Size.Width - 50, Me.Size.Height - 125)
     End Sub
     Private Sub frmLab13_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -58,7 +58,7 @@ FROM            Orders INNER JOIN
         dr = command.ExecuteReader()
         Dim i As Integer = 0
         While dr.Read()
-            ComboBox1.Items.Add(dr(i))
+            cboOrderID.Items.Add(dr(i))
         End While
         myConn.Close()
 
@@ -68,26 +68,26 @@ FROM            Orders INNER JOIN
         dr = command.ExecuteReader()
         i = 0
         While dr.Read()
-            ComboBox2.Items.Add(dr(i))
+            cboCompanyName.Items.Add(dr(i))
         End While
         myConn.Close()
 
     End Sub
 
     Private Sub frmLab13_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged
-        CrystalReportViewer1.Size = New Size(Me.Size.Width - 50, Me.Size.Height - 125)
+        crvData.Size = New Size(Me.Size.Width - 50, Me.Size.Height - 125)
     End Sub
 
-    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
-        If RadioButton2.Checked = True Then
-            ComboBox1.Enabled = True
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles radOrderID.CheckedChanged
+        If radOrderID.Checked = True Then
+            cboOrderID.Enabled = True
         Else
-            ComboBox1.Enabled = False
+            cboOrderID.Enabled = False
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        MessageBox.Show(ComboBox1.SelectedItem.ToString)
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboOrderID.SelectedIndexChanged
+        'MessageBox.Show(cboOrderID.SelectedItem.ToString)
         selectreport("SELECT        [Order Details].ProductID, Products.ProductName, Products.QuantityPerUnit, Products.UnitPrice, [Order Details].Quantity, Orders.OrderID, [Order Details].OrderID AS OD_ID, [Order Details].Discount, 
                          Customers.Address, Customers.City, Customers.Country, Customers.PostalCode, Orders.OrderDate, Employees.FirstName, Employees.LastName, Company.Name_company, Company.Address_company,
                           Customers.ContactName, Orders.RequiredDate, Customers.CompanyName
@@ -96,25 +96,25 @@ FROM            Orders INNER JOIN
                          Customers ON Orders.CustomerID = Customers.CustomerID INNER JOIN
                          [Order Details] ON Orders.OrderID = [Order Details].OrderID INNER JOIN
                          Products ON [Order Details].ProductID = Products.ProductID CROSS JOIN
-                         Company WHERE [Order Details].OrderID = '" & ComboBox1.SelectedItem.ToString & "'")
+                         Company WHERE [Order Details].OrderID = '" & cboOrderID.SelectedItem.ToString & "'")
     End Sub
 
-    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
-        If RadioButton1.Checked = True Then
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles radAll.CheckedChanged
+        If radAll.Checked = True Then
             Call frmLab13_Load(sender, e)
         End If
     End Sub
 
-    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
-        If RadioButton3.Checked = True Then
-            ComboBox2.Enabled = True
+    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles radCompanyName.CheckedChanged
+        If radCompanyName.Checked = True Then
+            cboCompanyName.Enabled = True
         Else
-            ComboBox2.Enabled = False
+            cboCompanyName.Enabled = False
         End If
     End Sub
 
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
-        MessageBox.Show(ComboBox2.SelectedItem.ToString)
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboCompanyName.SelectedIndexChanged
+        'MessageBox.Show(cboCompanyName.SelectedItem.ToString)
         selectreport("SELECT        [Order Details].ProductID, Products.ProductName, Products.QuantityPerUnit, Products.UnitPrice, [Order Details].Quantity, Orders.OrderID, [Order Details].OrderID AS OD_ID, [Order Details].Discount, 
                          Customers.Address, Customers.City, Customers.Country, Customers.PostalCode, Orders.OrderDate, Employees.FirstName, Employees.LastName, Company.Name_company, Company.Address_company,
                           Customers.ContactName, Orders.RequiredDate, Customers.CompanyName
@@ -123,6 +123,6 @@ FROM            Orders INNER JOIN
                          Customers ON Orders.CustomerID = Customers.CustomerID INNER JOIN
                          [Order Details] ON Orders.OrderID = [Order Details].OrderID INNER JOIN
                          Products ON [Order Details].ProductID = Products.ProductID CROSS JOIN
-                         Company WHERE Customers.CompanyName = '" & ComboBox2.SelectedItem.ToString & "'")
+                         Company WHERE Customers.CompanyName = '" & cboCompanyName.SelectedItem.ToString & "'")
     End Sub
 End Class
